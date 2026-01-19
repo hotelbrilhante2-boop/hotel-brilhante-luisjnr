@@ -1,100 +1,137 @@
-.texto {
-    max-width: 100%;
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
-}
+ #reserva {
+     text-align: center;
+ }
 
-.texto li {
-    font-size: 20px;
-    text-align: center;
-}
+ #reserva img {
+     width: 95%;
+ }
 
-.texto address {
-    text-align: center;
-    color: gray;
-}
+ #reserva:hover {
+     opacity: 0.5;
+ }
 
-.texto a {
-    color: #00879a;
-    text-decoration: none;
-}
+ .texto {
+     max-width: 100%;
+     text-align: center;
+     padding-left: 15%;
+     padding-right: 15%;
+ }
 
-.texto h2 {
-    font-size: 30px;
-}
+ .texto li {
+     font-size: 20px;
+     text-align: center;
+ }
 
-.rodape {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    margin-top: 100px;
-}
+ .texto address {
+     text-align: center;
+     color: gray;
+ }
 
-.atalhos {
-    display: inline-block;
-    max-width: 100%;
-}
+ .texto a {
+     color: #00879a;
+     text-decoration: none;
+ }
 
-.atalhos a {
-    position: relative;
-    left: 90px;
-    text-decoration: none;
-    text-align: left;
-    color: #00879a;
-    font-size: 20px;
-}
+ .texto a:hover {
+     text-decoration: underline;
+     opacity: 0.5;
+ }
 
-.informacoes {
-    display: inline-block;
-    text-align: center;
-    max-width: 100%;
-}
+ .texto h2 {
+     font-size: 30px;
+ }
 
-.redes {
-    display: inline-block;
-    text-align: center;
-    max-width: 100%;
-}
+ /* INICIO CARDS */
+ #cards {
+     display: flex;
+     position: relative;
+     background-color: #005a67;
+     width: 106%;
+     flex-flow: row wrap;
+     right: 3%;
+     padding-bottom: 40px;
+ }
 
-.redes img {
-    width: 40px;
-}
+ #hotel {
+     font-size: 60px;
+     flex: 100%;
+ }
 
-#cards {
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #005a67;
-    width: 106%;
-    padding-top: 50px;
-    gap: 5px;
-    padding-bottom: 100px;
-    right: 3%;
-}
+ .colunas-card {
+     background-color: white;
+     margin: 30px;
+     text-align: center;
+     flex: 1;
+ }
 
-#colunas-card {
-    display: inline-block;
-    background-color: white;
-    width: 80%;
-    height: auto;
-    padding: 10px;
-    margin-left: 33px;
-}
+ .colunas-card p {
+     display: inline-block;
+     width: 85%;
+     text-align: center;
+ }
 
-#colunas-card a {
-    text-decoration: none;
-    color: #00879a;
-    text-align: center;
-}
+ #cards a {
+     text-decoration: none;
+     color: #00879a;
+ }
 
-#hotel {
-    background-color: #005a67;
-    margin-bottom: 0px;
-    position: relative;
-    width: 106%;
-    right: 3%;
-    font-size: 50px;
-    padding-top: 30px;
-    color: black;
-}
+ #cards a:hover {
+     text-decoration: underline;
+     opacity: 0.5;
+ }
+
+ /* FIM CARDS */
+
+ /* INICIO RODAPE */
+ .rodape {
+     display: flex;
+     width: 100%;
+     flex-flow: row wrap;
+     margin-top: 30px;
+ }
+
+ .atalhos {
+     flex: 33%;
+     text-align: left;
+ }
+
+ .atalhos a {
+     display: flex;
+     padding-left: 150px;
+     gap: 1px;
+     color: #00879a;
+     text-decoration: none;
+ }
+
+ .atalhos a:hover {
+     text-decoration: underline;
+     opacity: 0.5;
+ }
+
+ .informacoes {
+     flex: 33%;
+ }
+
+ .redes {
+     flex: 33%;
+     text-align: center;
+ }
+
+ .redes img {
+     width: 40px;
+ }
+
+ .redes img:hover {
+     opacity: 0.5;
+ }
+
+ .ipisel {
+     flex: 100%;
+     text-align: center;
+ }
+
+ .ipisel img {
+     width: 200px;
+ }
+
+ /* FIM RODAPE */

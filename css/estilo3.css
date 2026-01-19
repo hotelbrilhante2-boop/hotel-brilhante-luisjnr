@@ -7,6 +7,7 @@
     right: 3%;
     background-color: #005a67;
     padding-bottom: 100px;
+    flex-flow: row wrap;
 }
 
 .coluna-esq {
@@ -59,11 +60,6 @@
 
 #site {
     width: 60%;
-}
-
-a:hover {
-    text-decoration: underline;
-    opacity: 0.5;
 }
 
 /* Smartphones (600px para baixo) */
