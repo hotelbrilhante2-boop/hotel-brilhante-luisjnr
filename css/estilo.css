@@ -21,28 +21,66 @@
      text-align: center;
  }
 
+ /* INICIO DO TOPO DO SITE E NAVEGAÇÃO*/
  .topo {
+     display: flex;
+     width: 100%;
      text-align: center;
+     height: 200px;
+     border-bottom: gray 2px solid;
+     margin: 0px;
  }
 
- .topo img {
-     width: 15%;
+ .logo-topo {
+     padding-top: 20px;
+     width: 100%;
  }
 
- .navegacao {
-     margin-top: 30px;
-     text-align: center;
-     border-bottom: 2px black solid;
+ .logo-topo img {
+     width: 80%;
  }
 
- .navegacao a {
-     display: inline-block;
-     padding: 20px 75px;
-     text-decoration: none;
+ .navegacao-dir {
+     display: flex;
+     width: 100%;
+     gap: 0px;
+     justify-content: center;
+     padding-top: 130px;
+ }
+
+ .navegacao-dir a {
+     width: 200px;
      color: #00879a;
+     text-decoration: none;
  }
 
- .grupo-img {
+ .navegacao-dir a:hover {
+     opacity: 0.5;
+     text-decoration: underline;
+ }
+
+ .navegacao-esq {
+     display: flex;
+     width: 100%;
+     gap: 0px;
+     justify-content: center;
+     padding-top: 130px;
+ }
+
+ .navegacao-esq a {
+     width: 200px;
+     color: #00879a;
+     text-decoration: none;
+ }
+
+ .navegacao-esq a:hover {
+     opacity: 0.5;
+     text-decoration: underline;
+ }
+
+ /* FIM DO TOPO DO SITE E NAVEGAÇÃO*/
+
+ #grupo-img {
      display: grid;
      grid-template-columns: repeat(4, 1fr);
      position: relative;
@@ -53,7 +91,7 @@
      right: 3%;
  }
 
- .grupo-img img {
+ #grupo-img img {
      width: 100%;
      height: 100%;
  }
@@ -85,13 +123,6 @@
      opacity: 0.5;
  }
 
- .texto {
-     max-width: 100%;
-     text-align: center;
-     padding-left: 15%;
-     padding-right: 15%;
- }
-
  .sol {
      text-align: center;
  }
@@ -114,166 +145,4 @@
 
  .ipisel img {
      width: 200px;
- }
-
- .rodape {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     width: 100%;
-     margin-top: 100px;
- }
-
- .atalhos {
-     display: inline-block;
-     max-width: 100%;
- }
-
- .atalhos a {
-     position: relative;
-     left: 90px;
-     text-decoration: none;
-     text-align: left;
-     color: #00879a;
-     font-size: 20px;
- }
-
- .informacoes {
-     display: inline-block;
-     text-align: center;
-     max-width: 100%;
- }
-
- .redes {
-     display: inline-block;
-     text-align: center;
-     max-width: 100%;
- }
-
- .redes img {
-     width: 40px;
- }
-
- .cards {
-     display: grid;
-     position: relative;
-     grid-template-columns: repeat(3, 1fr);
-     background-color: #005a67;
-     width: 106%;
-     padding-top: 50px;
-     gap: 5px;
-     padding-bottom: 100px;
-     right: 3%;
- }
-
- #hotel {
-     background-color: #005a67;
-     margin-bottom: 0px;
-     position: relative;
-     width: 106%;
-     right: 3%;
-     font-size: 50px;
-     padding-top: 30px;
-     color: black;
- }
-
- .colunas-card {
-     display: inline-block;
-     background-color: white;
-     width: 80%;
-     height: auto;
-     padding: 10px;
-     margin-left: 32px;
- }
-
- .colunas-card a {
-     text-decoration: none;
-     color: #00879a;
-     text-align: center;
- }
-
- .contato-local {
-     display: flex;
-     align-items: flex-start;
-     gap: 50px;
-     position: relative;
-     width: 106%;
-     right: 3%;
-     background-color: #005a67;
-     padding-bottom: 100px;
- }
-
- .coluna-esq {
-     display: inline-block;
-     position: relative;
-     border-radius: 10px;
-     width: 500px;
-     background-color: white;
-     text-align: center;
-     top: 40px;
-     left: 70px;
-     padding: 20px;
- }
-
- .coluna-esq p {
-     display: inline-block;
-     text-align: center;
-     width: 80%;
- }
-
- .coluna-dir {
-     display: inline-block;
-     position: relative;
-     max-width: 100%;
-     background-color: white;
-     text-align: center;
-     padding-bottom: 20px;
-     left: 80px;
-     top: 50px;
- }
-
- .coluna-dir iframe {
-     max-width: 98%;
- }
-
-
- .coluna-dir h2 {
-     width: 100%;
-     margin: 0px;
-     background-color: #005a67;
-     text-align: left;
-     padding-bottom: 50px;
-     border-bottom: 5px white solid;
-     font-size: 20px;
- }
-
- #whats {
-     width: 70%;
- }
-
- #site {
-     width: 60%;
- }
-
- .texto li {
-     font-size: 20px;
-     text-align: center;
- }
-
- .texto address {
-     text-align: center;
-     color: gray;
- }
-
- .texto a {
-     color: #00879a;
-     text-decoration: none;
- }
-
- .texto h2 {
-     font-size: 30px;
- }
-
- a:hover {
-     text-decoration: underline;
-     opacity: 0.5;
  }

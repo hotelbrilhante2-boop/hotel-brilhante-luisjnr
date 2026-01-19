@@ -1,0 +1,82 @@
+.contato-local {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    position: relative;
+    width: 106%;
+    right: 3%;
+    background-color: #005a67;
+    padding-bottom: 100px;
+}
+
+.coluna-esq {
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    width: 500px;
+    background-color: white;
+    text-align: center;
+    top: 40px;
+    left: 70px;
+    padding: 20px;
+}
+
+.coluna-esq p {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+}
+
+.coluna-dir {
+    display: inline-block;
+    position: relative;
+    width: 47%;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    left: 80px;
+    top: 50px;
+}
+
+.coluna-dir iframe {
+    width: 98%;
+}
+
+
+.coluna-dir h2 {
+    width: 100%;
+    margin: 0px;
+    background-color: #005a67;
+    text-align: left;
+    padding-bottom: 50px;
+    border-bottom: 5px white solid;
+    font-size: 20px;
+}
+
+#whats {
+    width: 70%;
+}
+
+#site {
+    width: 60%;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {}
