@@ -20,11 +20,15 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/estilo2.css">
     <link rel="stylesheet" href="../css/estilo3.css">
+    <link rel="stylesheet" href="../css/estilo4.css">
 </head>
 
 <body>
 
     <header class="topo">
+        <div class="btn-hamburger">
+            ☰
+        </div>
         <div class="navegacao-esq">
             <!--MENU DE NAVEGAÇÃO-->
             <a href="../links.html/sobre.html">Sobre nós</a>
@@ -43,6 +47,40 @@
         </div>
 
     </header>
+
+    <nav class="menu-mobile">
+        <div class="btn-fechar">×</div>
+
+        <a href="../index.html">Página Principal</a>
+        <a href="../links.html/sobre.html">Sobre nós</a>
+        <a href="../links.html/contato.html">Contato e Localização</a>
+        <a href="../links.html/regras.html">Regras do Hotel</a>
+        <a href="../links.html/reserva.html">Reserva</a>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <script>
+        const btnAbrir = document.querySelector('.btn-hamburger');
+        const btnFechar = document.querySelector('.btn-fechar');
+        const menu = document.querySelector('.menu-mobile');
+        const overlay = document.querySelector('.overlay');
+
+        btnAbrir.addEventListener('click', () => {
+            menu.classList.add('ativo');
+            overlay.classList.add('ativo');
+        });
+
+        btnFechar.addEventListener('click', () => {
+            menu.classList.remove('ativo');
+            overlay.classList.remove('ativo');
+        });
+
+        overlay.addEventListener('click', () => {
+            menu.classList.remove('ativo');
+            overlay.classList.remove('ativo');
+        });
+    </script>
 
     <section class="texto">
         <!--POLÍTICA DE CANCELAMENTO-->
@@ -95,6 +133,7 @@
             <a href="../links.html/sobre.html">> Sobre nós</a><br>
             <a href="../links.html/contato.html">> Contato e Localização</a><br>
             <a href="../links.html/regras.html">> Regras do Hotel</a><br>
+            <a href="../links.html/reserva.html">> Reserva</a>
         </div>
 
         <div class="informacoes">

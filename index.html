@@ -20,11 +20,15 @@
     <link rel=" stylesheet" href="css/estilo.css">
     <link rel=" stylesheet" href="css/estilo2.css">
     <link rel=" stylesheet" href="css/estilo3.css">
+    <link rel=" stylesheet" href="css/estilo4.css">
 </head>
 
 <body>
 
     <header class="topo">
+        <div class="btn-hamburger">
+            ☰
+        </div>
         <div class="navegacao-esq">
             <!--MENU DE NAVEGAÇÃO-->
             <a href="links.html/sobre.html">Sobre nós</a>
@@ -43,6 +47,40 @@
         </div>
 
     </header>
+
+    <nav class="menu-mobile">
+        <div class="btn-fechar">×</div>
+
+        <a href="links.html/sobre.html">Sobre nós</a>
+        <a href="links.html/contato.html">Contato e Localização</a>
+        <a href="links.html/cancelamento.html">Política de Cancelamento</a>
+        <a href="links.html/regras.html">Regras do Hotel</a>
+        <a href="links.html/reserva.html">Reserva</a>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <script>
+        const btnAbrir = document.querySelector('.btn-hamburger');
+        const btnFechar = document.querySelector('.btn-fechar');
+        const menu = document.querySelector('.menu-mobile');
+        const overlay = document.querySelector('.overlay');
+
+        btnAbrir.addEventListener('click', () => {
+            menu.classList.add('ativo');
+            overlay.classList.add('ativo');
+        });
+
+        btnFechar.addEventListener('click', () => {
+            menu.classList.remove('ativo');
+            overlay.classList.remove('ativo');
+        });
+
+        overlay.addEventListener('click', () => {
+            menu.classList.remove('ativo');
+            overlay.classList.remove('ativo');
+        });
+    </script>
 
     <section class="sol">
         <h1>Bem-vindo ao Hotel Brilhante<br>Itacarambi-MG.</h1>
@@ -78,15 +116,15 @@
             <img src="img/itac2.jpeg">
         </div>
 
-        <div>
-            <img src="img/desenhos.jpeg">
-        </div>
-
         <div id="back">
             <h3>Conheça</h3>
             <a href="links.html/contato.html">Clique aqui
                 e venha conhecer<br> as
                 principais atrações.</a>
+        </div>
+
+        <div>
+            <img src="img/desenhos.jpeg">
         </div>
 
         <div>
@@ -125,7 +163,7 @@
 
     <section id="cards">
         <h2 id="hotel">O Hotel</h2>
-        <div class="colunas-card">
+        <div class="coluna-card-esq">
             <!--ATALHOS-->
             <!--ADICIONAR FOTO-->
             <img src="img/suafotoaqui.jpeg"><br>
@@ -138,19 +176,19 @@
                 contato
                 com
                 a
-                natureza. <br><a href="">Saiba mais ></a><br></p>
+                natureza. <br><a href="">Saiba mais ></a></p>
         </div>
 
-        <div class="colunas-card">
+        <div class="coluna-card-meio">
             <p><strong style="color: black;">Quartos incriveis</strong><br><br> Os quartos do Hotel Brilhante oferecem
                 conforto, aconchego e
                 tranquilidade,
-                pensados para garantir uma estadia agradável e relaxante. <br><a href="">Clique e conheça!</a><br></p>
+                pensados para garantir uma estadia agradável e relaxante. <br><a href="">Clique e conheça!</a></p>
             <!--ADICIONAR FOTO-->
             <img src="img/suafotoaqui.jpeg">
         </div>
 
-        <div class="colunas-card">
+        <div class="coluna-card-dir">
             <!--ADICIONAR FOTO-->
             <img src="img/suafotoaqui.jpeg"><br>
             <p><strong style="color: black;">Hospitalidade e eficiência</strong><br><br> No Hotel Brilhante, o cuidado
@@ -160,7 +198,7 @@
                 atencioso criam uma experiência acolhedora,onde o hóspede é recebido com carinho e atenção do
                 início ao
                 fim.
-            </p><br>
+            </p>
         </div>
     </section>
 
@@ -176,6 +214,7 @@
             <a href="links.html/contato.html">> Contato e Localização</a><br>
             <a href="links.html/cancelamento.html">> Política de Cancelamento</a><br>
             <a href="links.html/regras.html">> Regras do Hotel</a><br>
+            <a href="links.html/reserva.html">> Reserva</a>
         </div>
 
         <div class="informacoes">
