@@ -1,2 +1,94 @@
 /* Desktop grande */
-@media only screen and (min-width: 1201px) and (max-width: 1600) {}
+@media only screen and (min-width: 1201px) and (max-width: 1700px) {
+    body {
+        overflow-x: hidden;
+        border-left: #00879a 150px solid;
+        border-right: #00879a 150px solid;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 40px 70px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    /* INICIO TOPO */
+
+    .topo {
+        height: 200px;
+    }
+
+    .logo-topo img {
+        width: 60%;
+    }
+
+    .logo-topo {
+        position: relative;
+        right: 23px;
+        flex: 100%;
+        top: 50px;
+    }
+
+    /*INICIO CARDS*/
+    #cards {
+        gap: 30px;
+    }
+
+    #cards p {
+        width: 80%;
+    }
+
+    #hotel {
+        position: relative;
+        top: -20px;
+        font-size: 60px;
+        padding-top: 20px;
+    }
+
+    .coluna-card-esq {
+        flex: 100%;
+        left: 0px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .coluna-card-meio {
+        flex: 100%;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .coluna-card-dir {
+        flex: 100%;
+        right: 0px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    /*FIM CARDS*/
+
+    /* FIM TOPO */
+
+    #reserva img {
+        width: 95%;
+    }
+
+    /* INICIO RODAPE */
+
+    .rodape h2 {
+        font-size: 30px;
+    }
+
+
+    .informacoes p {
+        font-size: 20px;
+    }
+
+}

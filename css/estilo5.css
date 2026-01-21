@@ -8,6 +8,7 @@
 
     h1 {
         font-size: 30px;
+        margin: 30px;
     }
 
     h2 {
@@ -21,17 +22,18 @@
     /* INICIO TOPO */
 
     .topo {
-        height: 130px;
+        height: 150px;
     }
 
+    .logo-topo img {
+        width: 50%;
+    }
 
     .logo-topo {
         position: relative;
         right: 23px;
         flex: 100%;
         top: -10px;
-        margin-left: 150px;
-        margin-right: 150px;
     }
 
     .navegacao-esq,
@@ -79,7 +81,6 @@
 
     #hotel {
         position: relative;
-        padding-top: 0px;
         top: -20px;
         font-size: 40px;
         padding-top: 20px;
@@ -88,20 +89,20 @@
     .coluna-card-esq {
         flex: 100%;
         left: 0px;
-        margin-left: 74px;
+        margin-left: 80px;
         margin-right: 80px;
     }
 
     .coluna-card-meio {
         flex: 100%;
-        margin-left: 74px;
+        margin-left: 80px;
         margin-right: 80px;
     }
 
     .coluna-card-dir {
         flex: 100%;
         right: 0px;
-        margin-left: 74px;
+        margin-left: 80px;
         margin-right: 80px;
     }
 
