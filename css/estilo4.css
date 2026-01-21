@@ -1,5 +1,5 @@
-/* Smartphones (600px para baixo) */
-@media only screen and (max-width: 600px) {
+/* Mobile */
+@media only screen and (max-width: 480px) {
 
     body {
         border: none;
@@ -21,7 +21,7 @@
     /* INICIO TOPO */
 
     .topo {
-        height: 120px;
+        height: 130px;
     }
 
 
@@ -88,20 +88,20 @@
     .coluna-card-esq {
         flex: 100%;
         left: 0px;
-        margin-left: 80px;
+        margin-left: 74px;
         margin-right: 80px;
     }
 
     .coluna-card-meio {
         flex: 100%;
-        margin-left: 80px;
+        margin-left: 74px;
         margin-right: 80px;
     }
 
     .coluna-card-dir {
         flex: 100%;
         right: 0px;
-        margin-left: 80px;
+        margin-left: 74px;
         margin-right: 80px;
     }
 
