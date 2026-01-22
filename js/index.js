@@ -18,7 +18,6 @@ overlay.addEventListener('click', () => {
     overlay.classList.remove('ativo');
 });
 
-/*
 const countries = [
     "Afeganistão", "África do Sul", "Albânia", "Alemanha", "Andorra", "Angola", "Argentina", "Armênia", "Aruba", "Arábia Saudita",
     "Austrália", "Áustria", "Azerbaijão", "Bahamas", "Bangladesh", "Barbados", "Barein", "Bélgica", "Belize", "Benin", "Bermudas",
@@ -48,4 +47,3 @@ countries.forEach(c => {
     option.value = c;
     datalist.appendChild(option);
 });
-*/
