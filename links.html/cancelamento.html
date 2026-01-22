@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../css/estilo7.css">
     <link rel="stylesheet" href="../css/estilo8.css">
     <link rel="stylesheet" href="../css/estilo9.css">
-    <link rel="stylesheet" href="../css/estilo10.css">
+</head>
 
 <body>
 
@@ -64,28 +64,6 @@
     </nav>
 
     <div class="overlay"></div>
-
-    <script>
-        const btnAbrir = document.querySelector('.btn-hamburger');
-        const btnFechar = document.querySelector('.btn-fechar');
-        const menu = document.querySelector('.menu-mobile');
-        const overlay = document.querySelector('.overlay');
-
-        btnAbrir.addEventListener('click', () => {
-            menu.classList.add('ativo');
-            overlay.classList.add('ativo');
-        });
-
-        btnFechar.addEventListener('click', () => {
-            menu.classList.remove('ativo');
-            overlay.classList.remove('ativo');
-        });
-
-        overlay.addEventListener('click', () => {
-            menu.classList.remove('ativo');
-            overlay.classList.remove('ativo');
-        });
-    </script>
 
     <section class="texto">
         <!--POLÍTICA DE CANCELAMENTO-->
@@ -167,6 +145,7 @@
         </div>
     </footer>
 
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

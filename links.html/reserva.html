@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../css/estilo8.css">
     <link rel="stylesheet" href="../css/estilo9.css">
     <link rel="stylesheet" href="../css/estilo10.css">
+
 </head>
 
 <body>
@@ -65,81 +66,38 @@
     </nav>
 
     <div class="overlay"></div>
+    <h1>Reserva - Hotel Brilhante</h1>
 
-    <script>
-        const btnAbrir = document.querySelector('.btn-hamburger');
-        const btnFechar = document.querySelector('.btn-fechar');
-        const menu = document.querySelector('.menu-mobile');
-        const overlay = document.querySelector('.overlay');
-
-        btnAbrir.addEventListener('click', () => {
-            menu.classList.add('ativo');
-            overlay.classList.add('ativo');
-        });
-
-        btnFechar.addEventListener('click', () => {
-            menu.classList.remove('ativo');
-            overlay.classList.remove('ativo');
-        });
-
-        overlay.addEventListener('click', () => {
-            menu.classList.remove('ativo');
-            overlay.classList.remove('ativo');
-        });
-    </script>
-
-    <section class="texto">
-        <h1>Reserva - Hotel Brilhante</h1>
-        <h2>Prenchimento de dados</h2>
+    <section class="card-quarto">
+        <div class="img-quarto">
+            <img src="../img/suafotoaqui.jpeg">
+        </div>
+        <div class="quarto">
+            <h2>APTO. EXECUTIVO INDIVIDUAL</h2>
+            <p>Acomodações para 1 hóspede<br>
+                Cama: Solteiro<br>
+                Capacidade: 1</p>
+        </div>
+        <div class="desc">
+            <img src="../img/ar.png" alt="ar-condicionado" title="Ar-Condicionado.">
+            <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
+            <img src="../img/frigobar.png" alt="Frigobar" title="Frigobar.">
+            <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+        </div>
     </section>
 
-    <section class="texto">
-        <!--RESERVA POR FORMULÁRIO-->
-        <form>
-            <label for="name">Nome* </label><br>
-            <input id="name" type="text" placeholder="Nome" required><br><br>
-
-            <label for="surname">Sobrenome* </label><br>
-            <input id="surname" type="text" placeholder="Sobrenome" required><br><br>
-
-            <label for="mail">Email*</label><br>
-            <input id="mail" type="email" placeholder="E-mail" required><br><br>
-
-            <label for="verificmail">Confirmar e-mail*</label><br>
-            <input id="verificmail" type="email" placeholder="Confirmar e-mail" required><br><br>
-
-            <label for="cell">Telefone*</label><br>
-            <input id="cell" type="tel" placeholder="Número" required><br><br>
-
-            <label for="cheackin">Check-in*</label><br>
-            <input id="checkin" type="date" required><br><br>
-
-            <label for="cheackout">Check-out*</label><br>
-            <input id="checkout" type="date" required><br><br>
-
-            <label for="country">País*</label><br>
-            <input id="country" type="text" placeholder="País" required><br><br>
-
-            <label for="state">Estado*</label><br>
-            <input id="state" type="text" placeholder="Estado" required><br><br>
-
-            <label for="city">Cidade*</label><br>
-            <input id="city" type="text" placeholder="Cidade" required><br><br>
-
-            <label for="cep">Cep*</label><br>
-            <input id="cep" type="tel" placeholder="Código postal" required><br><br>
-
-            <label for="adult">Adultos*</label><br>
-            <input id="adult" type="number" value="0" required><br><br>
-
-            <label for="kid">Crianças de 0 a 16 anos*</label><br>
-            <input id="kid" type="number" value="0" required><br><br>
 
 
-            <input type="submit" value="Finalizar Reserva">
+    <!--RESERVA POR FORMULÁRIO-->
+    <form>
+        <!--
+            <input id="country" list="countries" placeholder="País" required>
+            <datalist id="countries"></datalist>
 
-        </form>
-    </section>
+            <br><br>
+            -->
+
+    </form>
 
     <footer class="rodape">
         <div class="atalhos">
@@ -177,6 +135,7 @@
             <div>
     </footer>
 
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

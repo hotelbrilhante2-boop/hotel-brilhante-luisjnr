@@ -1,0 +1,41 @@
+.card-quarto {
+    display: inline-block;
+    position: relative;
+    background-color: #005a67;
+    width: 90%;
+    left: 5%;
+}
+
+.quarto {
+    position: relative;
+    display: inline-block;
+    bottom: 310px;
+    left: 360px;
+}
+
+.quarto h2 {
+    font-size: 40px;
+}
+
+.quarto p {
+    color: black;
+    text-align: left;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.img-quarto img {
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+.desc img {
+    position: relative;
+    width: 60px;
+    bottom: 310px;
+    left: 360px;
+}
