@@ -1,0 +1,24 @@
+.botao-reserva {
+    position: relative;
+    bottom: 30px;
+    left: 490px;
+    background-color: white;
+    border: #00879a 4px solid;
+    border-radius: 10px;
+    width: auto;
+
+}
+
+.botao-reserva h2 {
+    font-size: 20px;
+}
+
+.botao-reserva:hover {
+    opacity: 0.5;
+}
+
+.click {
+    position: relative;
+    left: 450px;
+    top: 20px;
+}
