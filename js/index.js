@@ -47,3 +47,15 @@ countries.forEach(c => {
     option.value = c;
     datalist.appendChild(option);
 });
+
+function mascaraTel(value) {
+    value = value.replace(/\D/g, "");
+    value = value.replace(/^(\d{2})(\d)/, "($1) $2");
+    value = value.replace(/(\d{5})(\d)/, "$1-$2");
+    return value;
+}
+
+const tel = document.getElementById("telefone");
+tel.addEventListener("input", () => {
+    tel.value = mascaraTel(tel.value);
+});

@@ -67,45 +67,59 @@
     <h1>Reserva - Hotel Brilhante</h1>
 
     <!--PREENCHIMENTO DE DADOS-->
-    <section class="dados">
+    <section class="quartos-geral">
         <h2>Preenchimento de dados</h2>
-        <form>
-            <div class="name-edit">
+        <div class="dados">
+            <form>
+
+                <h3>Dados pessoais</h3>
+
                 <label for="name"><strong>Nome completo</strong><strong
                         style="color: red; display: inline-block;">*</strong>
                 </label><br>
+                <input type="text" id="name" name="nome" maxlength="60" placeholder="Nome" required><br>
 
-                <input type="text" id="name" name="nome" required>
-            </div>
-
-            <div>
                 <label for="mail"><strong>E-mail</strong><strong style="color: red;">*</strong></label><br>
+                <input type="email" id="mail" name="e-mail" maxlength="60" placeholder="E-mail" required><br>
 
-                <input type="email" id="mail" name="e-mail" required>
-            </div>
-
-            <div>
                 <label for="nasc"><strong>Nascimento</strong><strong style="color: red;">*</strong></label><br>
+                <input type="date" id="nasc" name="nascimento" required><br>
 
-                <input type="date" id="nasc" name="nascimento" required>
-            </div>
-
-            <div>
                 <label for="sex"><strong>Sexo</strong><strong style="color: red;">*</strong></label><br>
-
                 <select id="sex" name="sexo">
                     <option>Masculino</option>
                     <option>Feminino</option>
-                </select>
-            </div>
+                </select><br>
 
-            <div>
                 <label for="country"><strong>País de origem</strong><strong style="color: red;">*</strong></label><br>
                 <input id="country" list="countries" placeholder="País" required>
-                <datalist id="countries"></datalist>
+                <datalist id="countries"></datalist><br>
 
-            </div>
-        </form>
+                <label for="telefone"><strong>Telefone</strong><strong style="color: red;">*</strong></label><br>
+                <input type="tel" id="telefone" placeholder="(99) 99999-9999" maxlength="15"><br>
+
+                <h3>Endereço residencial</h3>
+
+                <label for="cep"><strong>Cep</strong></label><br>
+                <input type="number" id="cep" placeholder="_____-___" maxlength="8"><br>
+
+                <label for="estado"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
+                <input id="estado" type="text" placeholder="Estado" name="estado" required><br>
+
+                <label for="estado"><strong>Cidade</strong><strong style="color: red;">*</strong></label><br>
+                <input id="cidade" type="text" placeholder="Cidade" name="cidade" required><br>
+
+                <label for="rua"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
+                <input id="rua" type="text" placeholder="Rua" name="rua" required><br>
+
+                <label for="numero"><strong>Cep</strong></label><br>
+                <input type="number" id="numero" placeholder="Número"><br>
+
+                <label for="bairro"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
+                <input id="bairro" type="text" placeholder="Bairro" name="bairro" required><br>
+
+            </form>
+        </div>
     </section>
 
     <script src="../js/index.js"></script>

@@ -188,14 +188,13 @@
 }
 
 .quartos-geral h2 {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .card-quarto {
-    background-color: white;
     display: flex;
+    background-color: white;
     border: 5px #00879a solid;
-    flex-flow: row wrap;
     width: 90%;
     margin-left: 5%;
     border-radius: 10px;
@@ -230,4 +229,13 @@
 
 .quarto p {
     text-align: left;
+}
+
+.dados {
+    background-color: white;
+    border: 5px #00879a solid;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    margin-top: 20px;
 }
