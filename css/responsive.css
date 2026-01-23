@@ -11,10 +11,6 @@
         margin: 10px;
     }
 
-    h2 {
-        font-size: 15px;
-    }
-
     p {
         font-size: 15px;
     }
@@ -116,10 +112,6 @@
 
     /* INICIO RODAPE */
 
-    .rodape h2 {
-        font-size: 30px;
-    }
-
     .atalhos {
         flex: 100%;
         padding-bottom: 20px;
@@ -179,10 +171,6 @@
     h1 {
         font-size: 30px;
         margin: 30px;
-    }
-
-    h2 {
-        font-size: 15px;
     }
 
     p {
@@ -286,10 +274,6 @@
 
     /* INICIO RODAPE */
 
-    .rodape h2 {
-        font-size: 30px;
-    }
-
     .atalhos {
         flex: 100%;
         padding-bottom: 20px;
@@ -348,10 +332,6 @@
     h1 {
         font-size: 30px;
         margin: 50px;
-    }
-
-    h2 {
-        font-size: 15px;
     }
 
     p {
@@ -459,10 +439,6 @@
 
     /* INICIO RODAPE */
 
-    .rodape h2 {
-        font-size: 30px;
-    }
-
     .atalhos {
         flex: 100%;
         padding-bottom: 20px;
@@ -523,10 +499,6 @@
     h1 {
         font-size: 30px;
         margin: 40px 70px;
-    }
-
-    h2 {
-        font-size: 15px;
     }
 
     p {
@@ -624,13 +596,11 @@
 
     #reserva img {
         width: 95%;
+
+        .
     }
 
     /* INICIO RODAPE */
-
-    .rodape h2 {
-        font-size: 30px;
-    }
 
     .atalhos {
         flex: 100%;
@@ -691,10 +661,6 @@
     h1 {
         font-size: 30px;
         margin: 40px 70px;
-    }
-
-    h2 {
-        font-size: 15px;
     }
 
     p {
@@ -796,10 +762,6 @@
 
     /* INICIO RODAPE */
 
-    .rodape h2 {
-        font-size: 30px;
-    }
-
     .atalhos {
         flex: 100%;
         padding-bottom: 20px;
@@ -859,10 +821,6 @@
     h1 {
         font-size: 30px;
         margin: 40px 70px;
-    }
-
-    h2 {
-        font-size: 15px;
     }
 
     p {
@@ -931,10 +889,6 @@
     }
 
     /* INICIO RODAPE */
-
-    .rodape h2 {
-        font-size: 30px;
-    }
 
 
     .informacoes p {
