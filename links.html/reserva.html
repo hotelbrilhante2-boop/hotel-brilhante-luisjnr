@@ -64,9 +64,35 @@
     <div class="overlay"></div>
     <h1>Reserva - Hotel Brilhante</h1>
 
+    <section class="botao-reserva">
+        <h3 id="resultado-total"></h3>
+        <p id="diariasTexto"></p>
+        <a href="../links.html/dados.html"><button id="botao-click">
+                <p>Prosseguir para reserva!</p>
+            </button></a>
+        <img src="../img/click.png" id="click">
+    </section>
+
     <section class="quartos-geral">
 
-        <h2>APT. EXECUTIVOS</h2>
+        <section class="datas-reserva">
+            <div id="entrada">
+                <label>
+                    <strong>Entrada:</strong>
+                </label>
+                <input type="date" id="dataEntrada" min="">
+            </div>
+
+            <h2>APT. EXECUTIVOS</h2>
+
+            <div id="saida">
+                <label>
+                    <strong>Saída:</strong>
+                </label>
+                <input type="date" id="dataSaida" min="">
+            </div>
+
+        </section>
 
         <!--APT. EXECUTIVO INDIVIDUAL-->
         <section class="card-quarto">
@@ -84,13 +110,20 @@
                 <img src="../img/ar.png" alt="ar-condicionado" title="Ar-Condicionado.">
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/frigobar.png" alt="Frigobar" title="Frigobar.">
-                <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/cafe.png" alt="Café da manhã" title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 150,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <a href="../links.html/dados.html"><button class="botao-reserva">
-                        <h2>Quero esse!</h2>
-                    </button></a>
+                <select class="qtd-quarto" data-preco="150" data-nome="APTO. EXECUTIVO INDIVIDUAL">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
 
-                <img class="click" src="../img/click.png">
             </div>
 
         </section>
@@ -113,12 +146,18 @@
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/frigobar.png" alt="Frigobar" title="Frigobar.">
                 <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 220,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <button class="botao-reserva">
-                    <h2>Quero esse!</h2>
-                </button>
-
-                <img class="click" src="../img/click.png">
+                <select class="qtd-quarto" data-preco="220" data-nome="APTO. EXECUTIVO DUPLO">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
 
         </section>
@@ -141,12 +180,18 @@
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/frigobar.png" alt="Frigobar" title="Frigobar.">
                 <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 300,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <button class="botao-reserva">
-                    <h2>Quero esse!</h2>
-                </button>
-
-                <img class="click" src="../img/click.png">
+                <select class="qtd-quarto" data-preco="300" data-nome="APTO. EXECUTIVO TRIPLO">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
 
         </section>
@@ -168,12 +213,18 @@
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/frigobar.png" alt="Frigobar" title="Frigobar.">
                 <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 330,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <button class="botao-reserva">
-                    <h2>Quero esse!</h2>
-                </button>
-
-                <img class="click" src="../img/click.png">
+                <select class="qtd-quarto" data-preco="330" data-nome="APTO. EXECUTIVO FAMÍLIA">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
 
         </section>
@@ -199,12 +250,18 @@
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/frigobar.png" alt="Frigobar" title="Frigobar.">
                 <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 120,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <button class="botao-reserva">
-                    <h2>Quero esse!</h2>
-                </button>
-
-                <img class="click" src="../img/click.png">
+                <select class="qtd-quarto" data-preco="120" data-nome="QUARTO AR-CONDICIONADO SIMPLES">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
 
         </section>
@@ -226,12 +283,18 @@
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/frigobar.png" alt="Frigobar" title="Frigobar.">
                 <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 180,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <button class="botao-reserva">
-                    <h2>Quero esse!</h2>
-                </button>
-
-                <img class="click" src="../img/click.png">
+                <select class="qtd-quarto" data-preco="180" data-nome="QUARTO AR-CONDICIONADO DUPLO">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
 
         </section>
@@ -253,12 +316,18 @@
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/frigobar.png" alt="Frigobar" title="Frigobar.">
                 <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 220,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <button class="botao-reserva">
-                    <h2>Quero esse!</h2>
-                </button>
-
-                <img class="click" src="../img/click.png">
+                <select class="qtd-quarto" data-preco="220" data-nome="QUARTO AR-CONDICIONADO TRIPLO">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
 
         </section>
@@ -284,12 +353,18 @@
                 <img src="../img/ventilador.png" alt="Ventilador" title="Ventilador.">
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 120,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <button class="botao-reserva">
-                    <h2>Quero esse!</h2>
-                </button>
-
-                <img class="click" src="../img/click.png">
+                <select class="qtd-quarto" data-preco="120" data-nome="QUARTO VENTILADOR SIMPLES">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
 
         </section>
@@ -310,12 +385,18 @@
                 <img src="../img/ventilador.png" alt="Ventilador" title="Ventilador.">
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 180,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <button class="botao-reserva">
-                    <h2>Quero esse!</h2>
-                </button>
-
-                <img class="click" src="../img/click.png">
+                <select class="qtd-quarto" data-preco="180" data-nome="QUARTO VENTILADOR DUPLO">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
 
         </section>
@@ -336,12 +417,18 @@
                 <img src="../img/ventilador.png" alt="Ventilador" title="Ventilador.">
                 <img src="../img/chuveiro.png" alt="banheiro com chuveiro" title="Banheiro com chuveiro.">
                 <img src="../img/cafe.png" alt="Café da manhã." title="Café da manhã.">
+                <img src="../img/tv.png" alt="Televisão" title="Televisão.">
+                <img src="../img/wifi.png" alt="WI-FI" title="WI-FI.">
                 <h2>R$ 220,00 <small style="font-size: 10px;">por noite.</small></h2>
-                <button class="botao-reserva">
-                    <h2>Quero esse!</h2>
-                </button>
-
-                <img class="click" src="../img/click.png">
+                <select class="qtd-quarto" data-preco="220" data-nome="QUARTO VENTILADOR TRIPLO">
+                    <option value="" selected disabled>Quantidade de quartos</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
 
         </section>

@@ -1,24 +1,58 @@
-.botao-reserva {
-    position: relative;
-    bottom: 30px;
-    left: 490px;
-    background-color: white;
-    border: #00879a 4px solid;
-    border-radius: 10px;
-    width: auto;
-
+.qtd-quarto {
+    height: 30px;
 }
 
-.botao-reserva h2 {
-    font-size: 20px;
-}
-
-.botao-reserva:hover {
+.qtd-quarto:hover {
     opacity: 0.5;
 }
 
-.click {
+.botao-reserva {
+    display: none;
+    position: fixed;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    border: 3px black solid;
+    background-color: #facc04;
+    z-index: 999;
+    text-align: center;
+    right: 350px;
+    bottom: 150px;
+}
+
+#botao-click {
     position: relative;
-    left: 450px;
-    top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: black 2px solid;
+    left: 27px;
+}
+
+#click {
+    position: relative;
+    width: 50px;
+    top: 45px;
+    right: 10px;
+}
+
+#botao-click:hover {
+    opacity: 0.5;
+    background-color: black;
+}
+
+#entrada {
+    position: relative;
+    top: 68px;
+    left: 50px;
+}
+
+#saida {
+    position: relative;
+    bottom: 65px;
+    left: 1150px;
+}
+
+#diariasTexto {
+    margin-top: -10px;
+    font-size: 15px;
 }

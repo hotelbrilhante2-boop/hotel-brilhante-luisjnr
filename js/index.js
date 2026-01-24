@@ -1,61 +1,124 @@
-const btnAbrir = document.querySelector('.btn-hamburger');
-const btnFechar = document.querySelector('.btn-fechar');
-const menu = document.querySelector('.menu-mobile');
-const overlay = document.querySelector('.overlay');
+const dataEntrada = document.getElementById("dataEntrada");
+const dataSaida = document.getElementById("dataSaida");
+const textoDiarias = document.getElementById("diariasTexto");
 
-btnAbrir.addEventListener('click', () => {
-    menu.classList.add('ativo');
-    overlay.classList.add('ativo');
+const hoje1 = new Date();
+const amanha = new Date(hoje1);
+amanha.setDate(hoje1.getDate() + 1);
+
+const formatar = (d) => d.toISOString().split("T")[0];
+
+// preenche os inputs
+dataEntrada.value = formatar(hoje1);
+dataSaida.value = formatar(amanha);
+
+// bloqueia datas anteriores
+dataEntrada.min = formatar(hoje1);
+dataSaida.min = formatar(amanha);
+
+
+// seta o mínimo da data de entrada (hoje)
+const hoje2 = new Date().toISOString().split("T")[0];
+dataEntrada.min = hoje2;
+dataSaida.min = hoje2;
+
+dataEntrada.addEventListener("change", () => {
+    dataSaida.value = "";
+    dataSaida.min = dataEntrada.value;
+    calcularTotal();
 });
 
-btnFechar.addEventListener('click', () => {
-    menu.classList.remove('ativo');
-    overlay.classList.remove('ativo');
+dataSaida.addEventListener("change", () => {
+    calcularTotal();
 });
 
-overlay.addEventListener('click', () => {
-    menu.classList.remove('ativo');
-    overlay.classList.remove('ativo');
-});
+//BOTÃO HAMBURGUER
 
-const countries = [
-    "Afeganistão", "África do Sul", "Albânia", "Alemanha", "Andorra", "Angola", "Argentina", "Armênia", "Aruba", "Arábia Saudita",
-    "Austrália", "Áustria", "Azerbaijão", "Bahamas", "Bangladesh", "Barbados", "Barein", "Bélgica", "Belize", "Benin", "Bermudas",
-    "Bielorrússia", "Bolívia", "Bósnia e Herzegovina", "Botswana", "Brasil", "Brunei", "Bulgária", "Burkina Faso", "Burundi",
-    "Butão", "Cabo Verde", "Camarões", "Camboja", "Canadá", "Catar", "Cazaquistão", "Chade", "Chile", "China", "Chipre", "Colômbia",
-    "Comores", "Congo", "Coreia do Norte", "Coreia do Sul", "Costa do Marfim", "Costa Rica", "Croácia", "Cuba", "Dinamarca",
-    "Dominica", "Egito", "El Salvador", "Emirados Árabes Unidos", "Equador", "Eritreia", "Eslováquia", "Eslovênia", "Espanha",
-    "Estados Unidos", "Estônia", "Etiópia", "Fiji", "Filipinas", "Finlândia", "França", "Gâmbia", "Gabão", "Geórgia", "Gana",
-    "Gibraltar", "Grécia", "Groenlândia", "Guatemala", "Guiana", "Guiné", "Guiné-Bissau", "Haiti", "Holanda", "Honduras", "Hungria",
-    "Iêmen", "Ilhas Cayman", "Ilhas Cook", "Ilhas Faroé", "Ilhas Marshall", "Ilhas Maurício", "Ilhas Salomão", "Índia", "Indonésia",
-    "Iraque", "Irã", "Irlanda", "Islândia", "Israel", "Itália", "Jamaica", "Japão", "Jordânia", "Kiribati", "Kosovo", "Kuweit",
-    "Laos", "Lesoto", "Letônia", "Líbano", "Libéria", "Líbia", "Liechtenstein", "Lituânia", "Luxemburgo", "Macau", "Macedônia",
-    "Madagáscar", "Malásia", "Malawi", "Maldivas", "Mali", "Malta", "Marrocos", "Martinica", "Mauritânia", "México", "Mianmar",
-    "Micronésia", "Moçambique", "Moldávia", "Mônaco", "Mongólia", "Namíbia", "Nauru", "Nepal", "Nicarágua", "Níger", "Nigéria",
-    "Noruega", "Nova Zelândia", "Oman", "Palau", "Panamá", "Papua Nova Guiné", "Paquistão", "Paraguai", "Peru", "Polônia",
-    "Portugal", "Qatar", "Quênia", "Quirguistão", "Reino Unido", "República Centro-Africana", "República Tcheca", "Romênia",
-    "Ruanda", "Rússia", "Samoa", "San Marino", "Santa Lúcia", "Senegal", "Serra Leoa", "Sérvia", "Síria", "Somália", "Sri Lanka",
-    "Suazilândia", "Sudão", "Sudão do Sul", "Suécia", "Suíça", "Suriname", "Tailândia", "Taiwan", "Tajiquistão", "Tanzânia",
-    "Timor-Leste", "Togo", "Tonga", "Trinidad e Tobago", "Tunísia", "Turquia", "Turcomenistão", "Tuvalu", "Ucrânia", "Uganda",
-    "Uruguai", "Uzbequistão", "Vanuatu", "Vaticano", "Venezuela", "Vietnã", "Zâmbia", "Zimbábue"
-];
+{
+    const btnAbrir = document.querySelector('.btn-hamburger');
+    const btnFechar = document.querySelector('.btn-fechar');
+    const menu = document.querySelector('.menu-mobile');
+    const overlay = document.querySelector('.overlay');
 
-const datalist = document.getElementById("countries");
+    btnAbrir.addEventListener('click', () => {
+        menu.classList.add('ativo');
+        overlay.classList.add('ativo');
+    });
 
-countries.forEach(c => {
-    const option = document.createElement("option");
-    option.value = c;
-    datalist.appendChild(option);
-});
+    btnFechar.addEventListener('click', () => {
+        menu.classList.remove('ativo');
+        overlay.classList.remove('ativo');
+    });
 
-function mascaraTel(value) {
-    value = value.replace(/\D/g, "");
-    value = value.replace(/^(\d{2})(\d)/, "($1) $2");
-    value = value.replace(/(\d{5})(\d)/, "$1-$2");
-    return value;
+    overlay.addEventListener('click', () => {
+        menu.classList.remove('ativo');
+        overlay.classList.remove('ativo');
+    });
 }
 
-const tel = document.getElementById("telefone");
-tel.addEventListener("input", () => {
-    tel.value = mascaraTel(tel.value);
+// --- RESERVA HOTEL BRILHANTE ---
+
+// pega todos os selects de quantidade
+const selects = document.querySelectorAll(".qtd-quarto");
+
+// pega o elemento onde mostra o total
+const resultado = document.getElementById("resultado-total");
+
+function calcularTotal() {
+    let total = 0;
+    const reservas = [];
+
+    // calcula quantidade de dias
+    let dias = 0;
+
+    if (dataEntrada.value && dataSaida.value) {
+        const inicio = new Date(dataEntrada.value);
+        const fim = new Date(dataSaida.value);
+
+        dias = (fim - inicio) / (1000 * 60 * 60 * 24);
+        if (dias < 1) dias = 0;
+    }
+
+    // pega selects
+    selects.forEach(select => {
+        const preco = Number(select.dataset.preco);
+        const qtd = Number(select.value);
+
+        if (qtd > 0) {
+            total += preco * qtd;
+            reservas.push({
+                nome: select.dataset.nome,
+                qtd: qtd,
+                preco: preco
+            });
+        }
+    });
+
+    // soma diária × dias
+    let totalFinal = dias > 0 ? total * dias : total;
+
+    // salva
+    localStorage.setItem("totalReserva", totalFinal);
+    localStorage.setItem("reservas", JSON.stringify(reservas));
+
+    // mostra total
+    if (dias > 0) {
+        textoDiarias.textContent = `Total diárias: ${dias}`;
+        resultado.textContent = `TOTAL: R$ ${totalFinal},00`;
+    }
+
+    // mostra ou esconde botão
+    const box = document.querySelector(".botao-reserva");
+    box.style.display = totalFinal > 0 ? "block" : "none";
+}
+
+// adiciona evento pra recalcular sempre que mudar a quantidade
+selects.forEach(select => {
+    select.addEventListener("input", calcularTotal);
 });
+
+// atualiza na abertura da página
+calcularTotal();
+
+localStorage.setItem("reservas", JSON.stringify(reservas));
+localStorage.setItem("totalReserva", total);
