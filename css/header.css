@@ -141,17 +141,3 @@
 }
 
 /* FIM DO TOPO DO SITE E NAVEGAÇÃO */
-
-#lista-reserva {
-    border-bottom: #00879a 5px solid;
-    background-color: white;
-}
-
-#lista-reserva p {
-    text-align: right;
-    margin-right: 20px;
-}
-
-#lista-reserva ul {
-    color: gray;
-}

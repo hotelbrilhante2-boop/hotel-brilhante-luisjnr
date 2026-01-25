@@ -240,3 +240,35 @@
     border-radius: 15px;
     margin-top: 20px;
 }
+
+#lista-reserva {
+    border-bottom: #00879a 5px solid;
+    background-color: white;
+}
+
+#lista-reserva p {
+    text-align: right;
+    margin-right: 20px;
+}
+
+#lista-reserva ul {
+    display: inline-block;
+    color: gray;
+}
+
+#datas {
+    position: relative;
+    left: 20px;
+    top: 50px;
+    font-size: 18px;
+    text-align: left;
+}
+
+p#datas {
+    text-align: left;
+}
+
+#sol-dados {
+    float: right;
+    width: 60px;
+}

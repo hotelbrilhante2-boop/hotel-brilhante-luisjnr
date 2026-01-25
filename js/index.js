@@ -76,6 +76,10 @@ function calcularTotal() {
         const fim = new Date(dataSaida.value);
 
         dias = (fim - inicio) / (1000 * 60 * 60 * 24);
+        localStorage.setItem("dataEntrada", dataEntrada.value);
+        localStorage.setItem("dataSaida", dataSaida.value);
+        localStorage.setItem("diarias", dias);
+
         if (dias < 1) dias = 0;
     }
 
@@ -103,7 +107,7 @@ function calcularTotal() {
 
     // mostra total
     if (dias > 0) {
-        textoDiarias.textContent = `Total diárias: ${dias}`;
+        textoDiarias.textContent = `Diárias totais: ${dias}`;
         resultado.textContent = `TOTAL: R$ ${totalFinal},00`;
     }
 
@@ -111,6 +115,13 @@ function calcularTotal() {
     const box = document.querySelector(".botao-reserva");
     box.style.display = totalFinal > 0 ? "block" : "none";
 }
+
+dataEntrada.addEventListener("change", () => {
+    const nova = new Date(dataEntrada.value);
+    nova.setDate(nova.getDate() + 1);
+    dataSaida.value = formatar(nova);
+});
+
 
 // adiciona evento pra recalcular sempre que mudar a quantidade
 selects.forEach(select => {

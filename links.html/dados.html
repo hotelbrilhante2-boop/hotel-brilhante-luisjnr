@@ -71,59 +71,87 @@
 
         <h2>Preenchimento de dados</h2>
         <div class="dados">
+            <img id="sol-dados" src="../img/sol.png">
             <div id="lista-reserva">
                 <ul id="lista-reservas"></ul>
+                <p id="datas"></p>
                 <p id="total"></p>
             </div>
 
-            <form>
+            <form id="formulario">
 
                 <h3>Dados pessoais</h3>
 
-                <label for="name"><strong>Nome completo</strong><strong
-                        style="color: red; display: inline-block;">*</strong>
-                </label><br>
-                <input type="text" id="name" name="nome" maxlength="60" placeholder="Nome" required><br>
+                <div id="nome">
+                    <label for="name"><strong>Nome completo</strong><strong
+                            style="color: red; display: inline-block;">*</strong>
+                    </label><br>
+                    <input type="text" id="name" name="nome" maxlength="60" placeholder="Nome" required>
+                </div>
 
-                <label for="mail"><strong>E-mail</strong><strong style="color: red;">*</strong></label><br>
-                <input type="email" id="mail" name="e-mail" maxlength="60" placeholder="E-mail" required><br>
+                <div id="email">
+                    <label for="mail"><strong>E-mail</strong><strong style="color: red;">*</strong></label><br>
+                    <input type="email" id="mail" name="e-mail" maxlength="60" placeholder="E-mail" required><br>
+                </div>
 
-                <label for="nasc"><strong>Nascimento</strong><strong style="color: red;">*</strong></label><br>
-                <input type="date" id="nasc" name="nascimento" required><br>
+                <div id="nascimento">
+                    <label for="nasc"><strong>Nascimento</strong><strong style="color: red;">*</strong></label><br>
+                    <input type="date" id="nasc" name="nascimento" required><br>
+                </div>
 
-                <label for="sex"><strong>Sexo</strong><strong style="color: red;">*</strong></label><br>
-                <select id="sex" name="sexo">
-                    <option>Masculino</option>
-                    <option>Feminino</option>
-                </select><br>
+                <div id="sexo">
+                    <label for="sex"><strong>Sexo</strong><strong style="color: red;">*</strong></label><br>
+                    <select id="sex" name="sexo">
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                    </select><br>
+                </div>
 
-                <label for="country"><strong>País de origem</strong><strong style="color: red;">*</strong></label><br>
-                <input id="country" list="countries" placeholder="País" required>
-                <datalist id="countries"></datalist><br>
+                <div id="ps">
+                    <label for="pais"><strong>País de origem</strong><strong style="color: red;">*</strong></label><br>
+                    <select id="pais" name="pais" required>
+                        <option value="Brasil">Brasil</option>
+                    </select><br>
+                </div>
 
-                <label for="telefone"><strong>Telefone</strong><strong style="color: red;">*</strong></label><br>
-                <input type="tel" id="telefone" placeholder="(99) 99999-9999" maxlength="15"><br>
+                <div id="tel">
+                    <label for="telefone"><strong>Telefone</strong><strong style="color: red;">*</strong></label><br>
+                    <input type="tel" id="telefone" placeholder="(99) 99999-9999" maxlength="15"><br>
+                </div>
+
 
                 <h3>Endereço residencial</h3>
 
-                <label for="cep"><strong>Cep</strong></label><br>
-                <input type="number" id="cep" placeholder="_____-___" maxlength="8"><br>
+                <div id="cep">
+                    <label for="cp"><strong>Cep</strong><strong style="color: red;">*</strong></label><br>
+                    <input type="text" id="cp" placeholder="_____-___" maxlength="8" required><br>
+                </div>
 
-                <label for="estado"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
-                <input id="estado" type="text" placeholder="Estado" name="estado" required><br>
+                <div id="estado">
+                    <label for="estd"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
+                    <input id="estd" type="text" placeholder="Estado" name="estado" required><br>
+                </div>
 
-                <label for="estado"><strong>Cidade</strong><strong style="color: red;">*</strong></label><br>
-                <input id="cidade" type="text" placeholder="Cidade" name="cidade" required><br>
 
-                <label for="rua"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
-                <input id="rua" type="text" placeholder="Rua" name="rua" required><br>
+                <div id="cidade">
+                    <label for="cid"><strong>Cidade</strong><strong style="color: red;">*</strong></label><br>
+                    <input id="cid" type="text" placeholder="Cidade" name="cidade" required><br>
+                </div>
 
-                <label for="numero"><strong>Cep</strong></label><br>
-                <input type="number" id="numero" placeholder="Número"><br>
+                <div id="rua">
+                    <label for="ru"><strong>Rua</strong><strong style="color: red;">*</strong></label><br>
+                    <input id="ru" type="text" placeholder="Rua" name="rua" required><br>
+                </div>
 
-                <label for="bairro"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
-                <input id="bairro" type="text" placeholder="Bairro" name="bairro" required><br>
+                <div id="numero">
+                    <label for="num"><strong>Número</strong><strong style="color: red;">*</strong></label><br>
+                    <input type="text" id="num" placeholder="Número" required><br>
+                </div>
 
+                <div id="bairro">
+                    <label for="bair"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
+                    <input id="bair" type="text" placeholder="Bairro" name="bairro" required><br>
+                </div>
             </form>
         </div>
     </section>
@@ -153,9 +181,9 @@
             <!--REDES SOCIAIS-->
             <h2>Redes Sociais</h2>
             <a href="https://wa.me//553836131170?text=Olá, quero fazer uma reserva.
-"><img src="../img/whatsappicon.png" alt="WhatsApp"></a>
-            <a href=""><img src="../img/instagramicon.png" alt="Instagram"></a>
-            <a href=""><img src="../img/facebookicon.png" alt="Facebook"></a><br><br>
+" target="_blank"><img src="../img/whatsappicon.png" alt="WhatsApp"></a>
+            <a href="" target="_blank"><img src="../img/instagramicon.png" alt="Instagram"></a>
+            <a href="" target="_blank"><img src="../img/facebookicon.png" alt="Facebook"></a>
         </div>
 
         <div class="ipisel">

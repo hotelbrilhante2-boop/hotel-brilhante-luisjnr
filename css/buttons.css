@@ -1,5 +1,6 @@
 .qtd-quarto {
     height: 30px;
+    cursor: pointer;
 }
 
 .qtd-quarto:hover {
@@ -26,6 +27,7 @@
     border-radius: 10px;
     border: black 2px solid;
     left: 27px;
+    cursor: pointer;
 }
 
 #click {
