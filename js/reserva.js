@@ -130,6 +130,3 @@ selects.forEach(select => {
 
 // atualiza na abertura da página
 calcularTotal();
-
-localStorage.setItem("reservas", JSON.stringify(reservas));
-localStorage.setItem("totalReserva", total);

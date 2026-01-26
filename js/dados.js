@@ -4,7 +4,6 @@ const dataEntrada = localStorage.getItem("dataEntrada");
 const dataSaida = localStorage.getItem("dataSaida");
 const diarias = Number(localStorage.getItem("diarias")) || 0;
 
-
 console.log(totalSalvo);
 console.log(reservasSalvo);
 
@@ -89,3 +88,83 @@ paises.forEach(p => {
     option.textContent = p;
     selectPais.appendChild(option);
 });
+
+
+//CONFIRMAÇÃO DA RESERVA
+const botao = document.getElementById("confirmar-reserva");
+
+botao.addEventListener("click", function (e) {
+    const form = document.getElementById("formulario");
+
+    // força validação
+    if (!form.reportValidity()) {
+        return; // para se tiver erro
+    }
+
+    const dados = {
+        nome: document.getElementById("name").value,
+        email: document.getElementById("mail").value,
+        nascimento: document.getElementById("nasc").value,
+        sexo: document.getElementById("sex").value,
+        pais: document.getElementById("pais").value,
+        telefone: document.getElementById("telefone").value,
+        cep: document.getElementById("cp").value,
+        estado: document.getElementById("estd").value,
+        cidade: document.getElementById("cid").value,
+        rua: document.getElementById("ru").value,
+        numero: document.getElementById("num").value,
+        bairro: document.getElementById("bair").value,
+    };
+
+    enviarWhatsApp(dados);
+});
+
+function pegarReserva() {
+    const reservas = JSON.parse(localStorage.getItem("reservas")) || [];
+    const dataEntrada = localStorage.getItem("dataEntrada");
+    const dataSaida = localStorage.getItem("dataSaida");
+    const diarias = localStorage.getItem("diarias");
+    const total = localStorage.getItem("totalReserva");
+
+    return { reservas, dataEntrada, dataSaida, diarias, total };
+}
+
+
+function enviarWhatsApp(dados) {
+    const reserva = pegarReserva();
+
+    let texto = `*RESERVA HOTEL BRILHANTE*\n\n`;
+
+    texto += `*Dados do hóspede:*\n`;
+    texto += `Nome: ${dados.nome}\n`;
+    texto += `Email: ${dados.email}\n`;
+    texto += `Nascimento: ${dados.nascimento}\n`;
+    texto += `Sexo: ${dados.sexo}\n`;
+    texto += `País: ${dados.pais}\n`;
+    texto += `Telefone: ${dados.telefone}\n\n`;
+
+    texto += `*Endereço:*\n`;
+    texto += `CEP: ${dados.cep}\n`;
+    texto += `Estado: ${dados.estado}\n`;
+    texto += `Cidade: ${dados.cidade}\n`;
+    texto += `Rua: ${dados.rua}, Nº ${dados.numero}\n`;
+    texto += `Bairro: ${dados.bairro}\n\n`;
+
+    texto += `*Reserva do quarto:*\n`;
+
+    reserva.reservas.forEach(r => {
+        texto += `${r.qtd}x ${r.nome} — R$ ${r.preco}\n`;
+    });
+
+    texto += `\nEntrada: ${reserva.dataEntrada}`;
+    texto += `\nSaída: ${reserva.dataSaida}`;
+    texto += `\nDiárias: ${reserva.diarias}`;
+    texto += `\n\n*Total: R$ ${reserva.total},00*\n`;
+
+    // WhatsApp — telefone destino
+    const telefoneDestino = "553836131170"; // <-- coloca o número do hotel
+
+    const url = `https://wa.me/${telefoneDestino}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
+}

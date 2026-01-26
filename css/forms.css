@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     margin: 0px 50px 50px 50px;
+    gap: 30px;
 }
 
 #formulario h3 {
@@ -9,13 +10,138 @@
     font-size: 35px;
 }
 
-#nome {
-    border: red 2px solid;
+#name {
     font-size: 19px;
 }
 
-input#name {
+#name input {
+    width: 500px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#mail {
+    font-size: 19px;
+}
+
+#mail input {
+    width: 500px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#birth {
+    font-size: 19px;
+}
+
+#birth input {
+    width: 160px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: text;
+}
+
+#sex {
+    font-size: 19px;
+}
+
+#sex select {
+    width: 140px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#country {
+    font-size: 19px;
+}
+
+#country select {
+    width: 140px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#phone {
+    font-size: 19px;
+}
+
+#phone input {
     width: 400px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#cp {
+    font-size: 19px;
+}
+
+#cp input {
+    width: 300px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#state {
+    font-size: 19px;
+}
+
+#state input {
+    width: 300px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#city {
+    font-size: 19px;
+}
+
+#city input {
+    width: 300px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#road {
+    font-size: 19px;
+}
+
+#road input {
+    width: 300px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#number {
+    font-size: 19px;
+}
+
+#number input {
+    width: 300px;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#neighborhood {
+    font-size: 19px;
+}
+
+#neighborhood input {
+    width: 300px;
     font-size: 19px;
     height: 50px;
     border-radius: 10px;
