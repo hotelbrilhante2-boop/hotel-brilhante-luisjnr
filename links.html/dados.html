@@ -17,154 +17,153 @@
     <link rel="icon" href="../img/sol.png">
 
     <!--LINK PARA O CSS-->
-    <link rel=" stylesheet" href="../css/style.css">
-    <link rel=" stylesheet" href="../css/cards.css">
-    <link rel=" stylesheet" href="../css/footer.css">
-    <link rel=" stylesheet" href="../css/header.css">
-    <link rel=" stylesheet" href="../css/buttons.css">
-    <link rel=" stylesheet" href="../css/forms.css">
-    <link rel=" stylesheet" href="../css/responsive.css">
+    <link rel=" stylesheet" href="../css/global.css">
+    <link rel=" stylesheet" href="../css/dados.css">
 
 </head>
 
-
 <body>
 
-    <header class="topo">
+    <nav class="navbar">
         <div class="btn-hamburger">
             ☰
         </div>
-        <div class="navegacao-esq">
+        <div class="navegacao">
             <!--MENU DE NAVEGAÇÃO-->
             <a href="../links.html/sobre.html">Sobre nós</a>
-            <a href="../links.html/contato.html">Contato e Localização</a>
+            <a href="../links.html/cancelamento.html">Política de Cancelamento</a>
         </div>
 
-        <div class="logo-topo">
+        <div class="logo">
             <!--LOGO-->
             <a href="../index.html"><img src="../img/logo.png"></a>
         </div>
 
-        <div class="navegacao-dir">
+        <div class="navegacao">
             <!--MENU DE NAVEGAÇÃO-->
+            <a href="../links.html/contato.html">Contato e Localização</a>
+            <a href="../links.html/regras.html">Regras do Hotel</a>
+        </div>
+
+        <div class="menu-mobile">
+            <div class="btn-fechar">×</div>
+
+            <a href="../index.html">Página Principal</a>
+            <a href="../links.html/sobre.html">Sobre nós</a>
+            <a href="../links.html/contato.html">Contato e Localização</a>
             <a href="../links.html/cancelamento.html">Política de Cancelamento</a>
             <a href="../links.html/regras.html">Regras do Hotel</a>
         </div>
 
-    </header>
+        <div class="overlay"></div>
 
-    <nav class="menu-mobile">
-        <div class="btn-fechar">×</div>
-
-        <a href="../index.html">Página Principal</a>
-        <a href="../links.html/sobre.html">Sobre nós</a>
-        <a href="../links.html/contato.html">Contato e Localização</a>
-        <a href="../links.html/cancelamento.html">Política de Cancelamento</a>
-        <a href="../links.html/regras.html">Regras do Hotel</a>
     </nav>
 
-    <div class="overlay"></div>
-    <h1>Reserva - Hotel Brilhante</h1>
+    <header class="header">
+        <h1>Reserva - Hotel Brilhante</h1>
 
-    <!--PREENCHIMENTO DE DADOS-->
-    <section class="quartos-geral">
+        <!--PREENCHIMENTO DE DADOS-->
+        <section class="template">
 
-        <h2>Preenchimento de dados</h2>
-        <div class="dados">
-            <img id="sol-dados" src="../img/sol.png">
-            <div id="lista-reserva">
-                <ul id="lista-reservas"></ul>
-                <p id="datas"></p>
-                <p id="total"></p>
+            <h2>Preenchimento de dados</h2>
+            <div class="dados">
+                <div id="dados-reserva">
+                    <ul id="lista-reservas"></ul>
+                    <img id="sol" src="../img/sol.png">
+                    <p id="datas"></p>
+                    <p id="total"></p>
+                </div>
+
+                <form id="formulario">
+
+                    <h3>Dados pessoais</h3>
+
+                    <div id="name">
+                        <label for="nome"><strong>Nome completo</strong><strong
+                                style="color: red; display: inline-block;">*</strong>
+                        </label><br>
+                        <input type="text" id="nome" name="nome" maxlength="60" placeholder="Nome" required>
+                    </div>
+
+                    <div id="mail">
+                        <label for="e-mail"><strong>E-mail</strong><strong style="color: red;">*</strong></label><br>
+                        <input type="email" id="e-mail" name="e-mail" maxlength="60" placeholder="E-mail" required><br>
+                    </div>
+
+                    <div id="birth">
+                        <label for="nascimento"><strong>Nascimento</strong><strong
+                                style="color: red;">*</strong></label><br>
+                        <input type="date" id="nascimento" name="nascimento" required><br>
+                    </div>
+
+                    <div id="sex">
+                        <label for="sex"><strong>Sexo</strong><strong style="color: red;">*</strong></label><br>
+                        <select id="sexo" name="sexo">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                        </select><br>
+                    </div>
+
+                    <div id="country">
+                        <label for="pais"><strong>País de origem</strong><strong
+                                style="color: red;">*</strong></label><br>
+                        <select id="pais" name="pais" required>
+                            <option value="Brasil">Brasil</option>
+                        </select><br>
+                    </div>
+
+                    <div id="phone">
+                        <label for="telefone"><strong>Telefone</strong><strong
+                                style="color: red;">*</strong></label><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 0 0000-0000" maxlength="11"
+                            minlength="11" required>
+                    </div>
+
+
+                    <h3>Endereço residencial</h3>
+
+                    <div id="cp">
+                        <label for="cep"><strong>Cep</strong><strong style="color: red;">*</strong></label><br>
+                        <input type="text" id="cep" name="cep" placeholder="_____-___" maxlength="8" minlength="8"
+                            required>
+
+                    </div>
+
+                    <div id="state">
+                        <label for="estado"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
+                        <input id="estado" type="text" placeholder="Estado" name="estado" required><br>
+                    </div>
+
+
+                    <div id="city">
+                        <label for="cidade"><strong>Cidade</strong><strong style="color: red;">*</strong></label><br>
+                        <input id="cidade" type="text" placeholder="Cidade" name="cidade" required><br>
+                    </div>
+
+                    <div id="road">
+                        <label for="rua"><strong>Rua</strong><strong style="color: red;">*</strong></label><br>
+                        <input id="rua" type="text" placeholder="Rua" name="rua" required><br>
+                    </div>
+
+                    <div id="number">
+                        <label for="numero"><strong>Número</strong><strong style="color: red;">*</strong></label><br>
+                        <input type="text" name="numero" id="numero" placeholder="Número" required><br>
+                    </div>
+
+                    <div id="neighborhood">
+                        <label for="bairro"><strong>Bairro</strong><strong style="color: red;">*</strong></label><br>
+                        <input id="bairro" type="text" placeholder="Bairro" name="bairro" required><br>
+                    </div>
+
+                    <div id="designe-botao-confirmar">
+                        <button type="button" id="confirmar-reserva">
+                            <p>Confirmar reserva!</p>
+                        </button>
+                    </div>
+                </form>
             </div>
-
-            <form id="formulario">
-
-                <h3>Dados pessoais</h3>
-
-                <div id="name">
-                    <label for="nome"><strong>Nome completo</strong><strong
-                            style="color: red; display: inline-block;">*</strong>
-                    </label><br>
-                    <input type="text" id="nome" name="nome" maxlength="60" placeholder="Nome" required>
-                </div>
-
-                <div id="mail">
-                    <label for="e-mail"><strong>E-mail</strong><strong style="color: red;">*</strong></label><br>
-                    <input type="email" id="e-mail" name="e-mail" maxlength="60" placeholder="E-mail" required><br>
-                </div>
-
-                <div id="birth">
-                    <label for="nascimento"><strong>Nascimento</strong><strong
-                            style="color: red;">*</strong></label><br>
-                    <input type="date" id="nascimento" name="nascimento" required><br>
-                </div>
-
-                <div id="sex">
-                    <label for="sex"><strong>Sexo</strong><strong style="color: red;">*</strong></label><br>
-                    <select id="sexo" name="sexo">
-                        <option>Masculino</option>
-                        <option>Feminino</option>
-                    </select><br>
-                </div>
-
-                <div id="country">
-                    <label for="pais"><strong>País de origem</strong><strong style="color: red;">*</strong></label><br>
-                    <select id="pais" name="pais" required>
-                        <option value="Brasil">Brasil</option>
-                    </select><br>
-                </div>
-
-                <div id="phone">
-                    <label for="telefone"><strong>Telefone</strong><strong style="color: red;">*</strong></label><br>
-                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 0 0000-0000" maxlength="15"
-                        minlength="15" pattern="^[0-9]{10,11}$" required>
-                </div>
-
-
-                <h3>Endereço residencial</h3>
-
-                <div id="cp">
-                    <label for="cep"><strong>Cep</strong><strong style="color: red;">*</strong></label><br>
-                    <input type="text" id="cep" name="cep" placeholder="_____-___" maxlength="9" minlength="9"
-                        pattern="^[0-9]{8}$" required>
-
-                </div>
-
-                <div id="state">
-                    <label for="estado"><strong>Estado</strong><strong style="color: red;">*</strong></label><br>
-                    <input id="estado" type="text" placeholder="Estado" name="estado" required><br>
-                </div>
-
-
-                <div id="city">
-                    <label for="cidade"><strong>Cidade</strong><strong style="color: red;">*</strong></label><br>
-                    <input id="cidade" type="text" placeholder="Cidade" name="cidade" required><br>
-                </div>
-
-                <div id="road">
-                    <label for="rua"><strong>Rua</strong><strong style="color: red;">*</strong></label><br>
-                    <input id="rua" type="text" placeholder="Rua" name="rua" required><br>
-                </div>
-
-                <div id="number">
-                    <label for="numero"><strong>Número</strong><strong style="color: red;">*</strong></label><br>
-                    <input type="text" name="numero" id="numero" placeholder="Número" required><br>
-                </div>
-
-                <div id="neighborhood">
-                    <label for="bairro"><strong>Bairro</strong><strong style="color: red;">*</strong></label><br>
-                    <input id="bairro" type="text" placeholder="Bairro" name="bairro" required><br>
-                </div>
-
-                <div id="designe-botao-confirmar">
-                    <button type="button" id="confirmar-reserva">
-                        <p>Confirmar reserva!</p>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
+        </section>
+    </header>
 
     <footer class="rodape">
         <div class="atalhos">
@@ -180,7 +179,8 @@
         <div class="informacoes">
             <!--INFORMAÇÕES DO HOTEL-->
             <h2>Informações</h2>
-            <p><strong>Hotel Brilhante</strong><br>CNPJ: 20.190.971/0001-59 <br>Endereço: R. 31 de Dezembro,<br> 235,
+            <p><strong>Hotel Brilhante</strong><br>CNPJ: 20.190.971/0001-59 <br>Endereço: R. 31 de Dezembro,<br>
+                235,
                 Centro,
                 Itacarambi - MG<br>
                 CEP:

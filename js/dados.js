@@ -102,18 +102,18 @@ botao.addEventListener("click", function (e) {
     }
 
     const dados = {
-        nome: document.getElementById("name").value,
-        email: document.getElementById("mail").value,
-        nascimento: document.getElementById("nasc").value,
-        sexo: document.getElementById("sex").value,
+        nome: document.getElementById("nome").value,
+        email: document.getElementById("e-mail").value,
+        nascimento: document.getElementById("nascimento").value,
+        sexo: document.getElementById("sexo").value,
         pais: document.getElementById("pais").value,
         telefone: document.getElementById("telefone").value,
-        cep: document.getElementById("cp").value,
-        estado: document.getElementById("estd").value,
-        cidade: document.getElementById("cid").value,
-        rua: document.getElementById("ru").value,
-        numero: document.getElementById("num").value,
-        bairro: document.getElementById("bair").value,
+        cep: document.getElementById("cep").value,
+        estado: document.getElementById("estado").value,
+        cidade: document.getElementById("cidade").value,
+        rua: document.getElementById("rua").value,
+        numero: document.getElementById("numero").value,
+        bairro: document.getElementById("bairro").value
     };
 
     enviarWhatsApp(dados);
@@ -128,7 +128,6 @@ function pegarReserva() {
 
     return { reservas, dataEntrada, dataSaida, diarias, total };
 }
-
 
 function enviarWhatsApp(dados) {
     const reserva = pegarReserva();

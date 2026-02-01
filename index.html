@@ -17,102 +17,100 @@
     <!--LINK ICON-->
     <link rel="icon" href="../img/sol.png">
     <!--LINK PARA O CSS-->
-    <link rel=" stylesheet" href="css/style.css">
-    <link rel=" stylesheet" href="css/cards.css">
-    <link rel=" stylesheet" href="css/footer.css">
-    <link rel=" stylesheet" href="css/header.css">
-    <link rel=" stylesheet" href="css/buttons.css">
-    <link rel=" stylesheet" href="css/forms.css">
-    <link rel=" stylesheet" href="css/responsive.css">
+    <link rel=" stylesheet" href="css/global.css">
+    <link rel=" stylesheet" href="css/index.css">
+
 </head>
 
 <body>
 
-    <header class="topo">
+    <!--TOPO-->
+    <nav class="navbar">
         <div class="btn-hamburger">
             ☰
         </div>
-        <div class="navegacao-esq">
+        <div class="navegacao">
             <!--MENU DE NAVEGAÇÃO-->
             <a href="links.html/sobre.html">Sobre nós</a>
-            <a href="links.html/contato.html">Contato e Localização</a>
+            <a href="links.html/cancelamento.html">Política de Cancelamento</a>
         </div>
 
-        <div class="logo-topo">
+        <div class="logo">
             <!--LOGO-->
             <img src="img/logo.png">
         </div>
 
-        <div class="navegacao-dir">
+        <div class="navegacao">
             <!--MENU DE NAVEGAÇÃO-->
-            <a href="links.html/cancelamento.html">Política de Cancelamento</a>
+            <a href="links.html/contato.html">Contato e Localização</a>
+
             <a href="links.html/regras.html">Regras do Hotel</a>
         </div>
 
-    </header>
+        <div class="menu-mobile">
+            <div class="btn-fechar">×</div>
 
-    <nav class="menu-mobile">
-        <div class="btn-fechar">×</div>
+            <a href="links.html/sobre.html">Sobre nós</a>
+            <a href="links.html/contato.html">Contato e Localização</a>
+            <a href="links.html/cancelamento.html">Política de Cancelamento</a>
+            <a href="links.html/regras.html">Regras do Hotel</a>
+            <a href="links.html/reserva.html">Reserva</a>
+        </div>
 
-        <a href="links.html/sobre.html">Sobre nós</a>
-        <a href="links.html/contato.html">Contato e Localização</a>
-        <a href="links.html/cancelamento.html">Política de Cancelamento</a>
-        <a href="links.html/regras.html">Regras do Hotel</a>
-        <a href="links.html/reserva.html">Reserva</a>
+        <div class="overlay"></div>
+
     </nav>
 
-    <div class="overlay"></div>
-
-    <section class="sol">
+    <header class="header">
         <h1>Bem-vindo ao Hotel Brilhante<br>Itacarambi-MG.</h1>
-        <img src="img/sol.png" alt="Sol ">
-    </section>
-    <section class="texto">
+        <img src="img/sol.png" alt="Sol" style="width: 50px;">
+
         <!--FRASE SOBRE O HOTEL-->
         <p>O Hotel Brilhante, em Itacarambi (MG), é uma ótima
             opção para quem busca conforto, bom atendimento
             e uma estadia tranquila na cidade.</p><br>
-    </section>
 
-    <section id="grupo-img">
-        <!--IMAGENS ILUSTRATIVAS-->
-        <div>
-            <img src="img/itac.png">
+        <div class="grupo-img">
+            <!--IMAGENS ILUSTRATIVAS-->
+            <div class="imagens">
+                <img src="img/itac.png">
+            </div>
+
+            <div class="imagens">
+                <img src="img/cidade.jpeg">
+            </div>
+
+            <div class="imagens">
+                <img src="img/coracao.png">
+            </div>
+
+            <div class="imagens">
+                <img src="img/peru.jpeg">
+            </div>
+
+            <div class="imagens">
+                <img src="img/itac2.jpeg">
+            </div>
+
+            <div class="imagens">
+                <h3>Conheça</h3>
+                <a href="links.html/contato.html">Clique aqui
+                    e venha conhecer<br> as
+                    principais atrações.</a>
+            </div>
+
+            <div class="imagens">
+                <img src="img/desenhos.jpeg">
+            </div>
+
+            <div class="imagens">
+                <img src="img/caverna.jpeg">
+            </div>
         </div>
 
-        <div>
-            <img src="img/cidade.jpeg">
-        </div>
+    </header>
 
-        <div>
-            <img src="img/coracao.png">
-        </div>
-
-        <div>
-            <img src="img/peru.jpeg">
-        </div>
-
-        <div>
-            <img src="img/itac2.jpeg">
-        </div>
-
-        <div id="back">
-            <h3>Conheça</h3>
-            <a href="links.html/contato.html">Clique aqui
-                e venha conhecer<br> as
-                principais atrações.</a>
-        </div>
-
-        <div>
-            <img src="img/desenhos.jpeg">
-        </div>
-
-        <div>
-            <img src="img/caverna.jpeg">
-        </div>
-    </section>
-
-    <section class="texto">
+    <section class="header">
         <!--UM POUCO SOBRE ITACARAMBI-->
         <p><strong>Itacarambi</strong>, no norte de Minas Gerais, é uma cidade tranquila, marcada pela cultura do
             sertão,
@@ -123,13 +121,13 @@
             importante
             ponto de apoio
             para visitantes interessados nas cavernas e nas paisagens naturais da região.</p>
-    </section>
 
-    <section class="sol">
-        <img src="img/sol.png" alt="Sol ">
-    </section>
 
-    <section class="texto">
+        <div class="sol">
+            <img src="img/sol.png" alt="Sol" style="width: 50px;">
+        </div>
+
+
         <p>As <strong>Cavernas do Peruaçu</strong> guardam registros de ocupação humana de milhares de anos,
             evidenciados
             por pinturas
@@ -138,52 +136,59 @@
             da
             região como local de abrigo, rituais e convivência, tornando o Peruaçu um dos mais valiosos patrimônios
             históricos e culturais do país.</p><br>
-    </section>
 
+        <div class="cards">
+            <h2 id="hotel">O Hotel</h2>
 
-    <section id="cards">
-        <h2 id="hotel">O Hotel</h2>
-        <div class="coluna-card-esq">
-            <!--ATALHOS-->
-            <!--ADICIONAR FOTO-->
-            <img src="img/suafotoaqui.jpeg"><br>
-            <p><strong style="color: black;">Vista extraordinária</strong><br><br> A vista do Hotel Brilhante é ainda
-                mais
-                especial por estar
-                voltada
-                para
-                o Rio São Francisco, proporcionando um cenário tranquilo e encantador para quem busca descanso e
-                contato
-                com
-                a
-                natureza. <br><a href="">Saiba mais ></a></p>
+            <div class="coluna">
+                <!--ATALHOS-->
+                <!--ADICIONAR FOTO-->
+                <img src="img/img-hotel/vista.jpeg">
+                <h3>Vista extraordinária</h3>
+                <p> A vista do Hotel Brilhante é
+                    ainda
+                    mais
+                    especial por estar
+                    voltada
+                    para
+                    o Rio São Francisco, proporcionando um cenário tranquilo e encantador para quem busca descanso e
+                    contato
+                    com
+                    a
+                    natureza. <br><a href="links.html/contato.html">Saiba mais ></a></p>
+            </div>
+
+            <div class="coluna">
+                <h3>Quartos incriveis</h3>
+                <p>Os quartos do Hotel Brilhante
+                    oferecem
+                    conforto, aconchego e
+                    tranquilidade,
+                    pensados para garantir uma estadia agradável e relaxante. <br><a
+                        href="links.html/contato.html">Clique e conheça!</a>
+                </p><br>
+                <!--ADICIONAR FOTO-->
+                <img src="img/img-hotel/aptoFamilia.jpeg">
+            </div>
+
+            <div class="coluna">
+                <!--ADICIONAR FOTO-->
+                <img src="img/img-hotel/cafe.jpeg">
+                <h3>Hospitalidade e eficiência</h3>
+                <p> No Hotel Brilhante, o
+                    cuidado
+                    com
+                    cada detalhe e o
+                    atendimento
+                    atencioso criam uma experiência acolhedora,onde o hóspede é recebido com carinho e atenção do
+                    início ao
+                    fim.
+                </p>
+            </div>
         </div>
-
-        <div class="coluna-card-meio">
-            <p><strong style="color: black;">Quartos incriveis</strong><br><br> Os quartos do Hotel Brilhante oferecem
-                conforto, aconchego e
-                tranquilidade,
-                pensados para garantir uma estadia agradável e relaxante. <br><a href="">Clique e conheça!</a></p>
-            <!--ADICIONAR FOTO-->
-            <img src="img/suafotoaqui.jpeg">
+        <div class="reserva">
+            <a href="links.html/contato.html"><img src="img/reserva.png"></a>
         </div>
-
-        <div class="coluna-card-dir">
-            <!--ADICIONAR FOTO-->
-            <img src="img/suafotoaqui.jpeg"><br>
-            <p><strong style="color: black;">Hospitalidade e eficiência</strong><br><br> No Hotel Brilhante, o cuidado
-                com
-                cada detalhe e o
-                atendimento
-                atencioso criam uma experiência acolhedora,onde o hóspede é recebido com carinho e atenção do
-                início ao
-                fim.
-            </p>
-        </div>
-    </section>
-
-    <section id="reserva">
-        <a href="links.html/contato.html"><img src="img/reserva.png"></a>
     </section>
 
     <footer class="rodape">

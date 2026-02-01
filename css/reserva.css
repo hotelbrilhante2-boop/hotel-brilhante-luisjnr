@@ -1,0 +1,147 @@
+.template {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #005a67;
+    justify-content: center;
+    align-items: center;
+    width: 106%;
+    position: relative;
+    right: 3%;
+    margin-top: 5%;
+    padding-bottom: 100px;
+}
+
+.header h2 {
+    display: inline-block;
+    width: 50%;
+    font-size: 40px;
+}
+
+.datas-reserva {
+    display: inline-block;
+    width: 100%;
+}
+
+#entrada {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    top: -55px;
+}
+
+#saida {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    top: -55px;
+}
+
+.card-quarto {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    border: 7px #00879a solid;
+    flex: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.img-quarto {
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 35%;
+    border-right: 2px #00879a solid;
+}
+
+.img-quarto img {
+    width: 93%;
+    height: 350px;
+}
+
+.quarto {
+    flex: 65%;
+    border-left: 2px #00879a solid;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.quarto h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.quarto h3 {
+    font-size: 20px;
+}
+
+.quarto img {
+    width: 60px;
+    cursor: help;
+}
+
+.quarto p {
+    margin-left: 0px;
+    text-align: left;
+}
+
+.qtd-quarto {
+    position: relative;
+    left: 22%;
+    background-color: white;
+    height: 30px;
+    border-radius: 5px;
+    border: #00879a 2px solid;
+    cursor: pointer;
+}
+
+.botao-reserva {
+    background-color: #facc04;
+    width: 300px;
+    border-radius: 10px;
+    z-index: 999;
+    text-align: center;
+    height: 150px;
+    border: black 2px solid;
+    position: fixed;
+    top: 50%;
+    right: 20%;
+}
+
+.botao-reserva img {
+    width: 60px;
+}
+
+.botao-reserva h3 {
+    font-size: 20px;
+}
+
+.botao-reserva p {
+    font-size: 18px;
+}
+
+#botao-click {
+    background-color: white;
+    border-radius: 7px;
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+}
+
+#botao-click:hover {
+    background-color: black;
+    opacity: 0.8;
+}
+
+#botao-click p {
+    margin: 15px;
+}
+
+#click {
+    position: relative;
+    bottom: 30px;
+    left: 110px;
+}

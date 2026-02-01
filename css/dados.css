@@ -1,3 +1,79 @@
+.template {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #005a67;
+    justify-content: center;
+    align-items: center;
+    width: 106%;
+    position: relative;
+    right: 3%;
+    margin-top: 5%;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.header h2 {
+    display: inline-block;
+    width: 50%;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.header ul {
+    display: inline-block;
+    width: 0px;
+    text-align: left;
+    color: gray;
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.header p {
+    font-size: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#dados-reserva {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: #00879a 5px solid;
+    background-color: white;
+}
+
+#dados-reserva img {
+    width: 70px;
+}
+
+#lista-reservas {
+    flex: 80%;
+    margin-left: 5%;
+}
+
+#datas {
+    flex: 70%;
+    margin-left: 5%;
+}
+
+#total {
+    text-align: right;
+    flex: 20%;
+    margin-right: 5%;
+    position: relative;
+    top: 50px;
+}
+
+.dados {
+    text-align: left;
+    background-color: white;
+    border: 7px #00879a solid;
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
 #formulario {
     display: flex;
     flex-flow: row wrap;
@@ -145,4 +221,30 @@
     font-size: 19px;
     height: 50px;
     border-radius: 10px;
+}
+
+#confirmar-reserva {
+    border: #00879a 7px solid;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    background-color: white;
+}
+
+#confirmar-reserva p {
+    color: black;
+}
+
+#confirmar-reserva:hover {
+    background-color: #00879a;
+    opacity: 0.8;
+}
+
+#designe-botao-confirmar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
