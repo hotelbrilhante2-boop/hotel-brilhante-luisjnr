@@ -84,10 +84,42 @@
     color: #facc04;
 }
 
-.reserva img {
-    width: 95%;
+.reserva {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #facc04;
+    margin: 4% 2% 0 2%;
+    height: 200px;
 }
 
-.reserva img:hover {
+.reserva img {
+    width: 60px;
+    position: relative;
+    top: 10%;
+    right: 11%;
+}
+
+.reserva h2 {
+    font-size: 40px;
+    margin-left: 3%;
+    position: relative;
+    top: 10%;
+    right: 11%;
+    color: black;
+}
+
+.reserva h3 {
+    font-size: 20px;
+    width: 70%;
+    position: relative;
+    bottom: 15%;
+    right: 5%;
+    color: black;
+}
+
+.reserva:hover {
     opacity: 0.5;
+    cursor: pointer;
 }

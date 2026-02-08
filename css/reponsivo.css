@@ -179,10 +179,6 @@
 
 @media screen and (max-width: 890px) {
 
-    .reserva img {
-        height: 150px;
-    }
-
     .header-dados h2 {
         font-size: 30px;
     }
@@ -283,6 +279,10 @@
     .ipisel img {
         width: 30%;
     }
+
+    .reserva h2 {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 726px) {
@@ -301,6 +301,8 @@
 
     #total {
         font-size: 15px;
+        margin: 0;
+        margin-right: 2%;
     }
 
     #lista-reservas {
@@ -311,11 +313,32 @@
         width: 50px;
     }
 
-    #total {
-        margin: 0;
-        margin-right: 2%;
+    .imagens a {
+        font-size: 15px;
     }
 
+    .reserva {
+        height: 300px;
+    }
+
+    .reserva img {
+        right: 0%;
+        left: 40%;
+
+    }
+
+    .reserva h2 {
+        margin-top: 17%;
+        right: 25%;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .reserva h3 {
+        margin-top: 8%;
+        right: 20%;
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 678px) {
@@ -349,18 +372,23 @@
 
     .atalhos {
         flex: 100%;
+        text-align: left;
     }
 
-    .atalhos a {
-        padding-left: 35%;
+    .atalhos h2 {
+        padding-left: 10%;
     }
 
     .redes {
         flex: 100%;
+        text-align: left;
+        padding-left: 10%;
     }
 
     .informacoes {
         flex: 100%;
+        text-align: left;
+        padding-left: 10%;
     }
 
     #name input {
@@ -402,6 +430,36 @@
     #neighborhood input {
         width: 300px;
     }
+
+    .reserva h2 {
+        right: 20%;
+    }
+
+    .reserva h3 {
+        right: 15%;
+    }
+
+    .botao-reserva {
+        width: 200px;
+        height: 150;
+    }
+
+    #botao-click {
+        width: 70%;
+        height: 80px;
+    }
+
+    .botao-reserva h3 {
+        font-size: 15px;
+    }
+
+    .botao-reserva p {
+        font-size: 15px;
+    }
+
+    #click {
+        left: 60px;
+    }
 }
 
 @media screen and (max-width: 554px) {
@@ -412,10 +470,6 @@
 
     .quarto img {
         width: 50px;
-    }
-
-    .atalhos a {
-        padding-left: 30%;
     }
 
     .coluna {
@@ -433,6 +487,18 @@
         margin: 5% 5% 5% 5%;
     }
 
+    .reserva h2 {
+        right: 15%;
+    }
+
+    .reserva h3 {
+        right: 10%;
+    }
+
+    .ipisel img {
+        width: 40%;
+    }
+
 }
 
 @media screen and (max-width: 490px) {
@@ -447,6 +513,15 @@
 
     .qtd-quarto {
         left: 5%;
+    }
+
+    .reserva h2 {
+        right: 10%;
+    }
+
+    .reserva h3 {
+        right: 5%;
+        width: 100%;
     }
 
 }
@@ -509,6 +584,10 @@
         height: 200px;
     }
 
+    .reserva h3 {
+        right: 10%;
+    }
+
     #whats {
         width: 80%;
     }
@@ -520,6 +599,7 @@
     .ipisel img {
         width: 40%;
     }
+
 }
 
 @media screen and (max-width: 415px) {
@@ -548,8 +628,72 @@
         font-size: 30px;
     }
 
-    .atalhos a {
-        padding-left: 50px;
+    .imagens a {
+        font-size: 15px;
+    }
+
+    .imagens img {
+        height: 180px;
+    }
+
+    .quarto img {
+        width: 30px;
+    }
+
+    .quarto h2 {
+        font-size: 25px;
+    }
+
+    .quarto h3 {
+        font-size: 15px;
+    }
+
+    .reserva img {
+        left: 35%;
+    }
+
+    .reserva h2 {
+        right: 10%;
+        width: 100%;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+
+    .reserva h3 {
+        right: 5%;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+
+    #lista-reservas {
+        font-size: 13px;
+    }
+
+    .reserva h3 {
+        right: 10%;
+    }
+
+    #formulario {
+        margin-left: 5%;
+    }
+
+    #confirmar-reserva {
+        margin-left: 15%;
+    }
+
+    .quarto h2 {
+        width: 70%;
+    }
+
+    .quarto img {
+        width: 40px;
+    }
+
+    .template h2 {
+        font-size: 30px;
     }
 
     .imagens a {
@@ -570,6 +714,99 @@
 
     .quarto h3 {
         font-size: 15px;
+    }
+
+    .reserva img {
+        left: 35%;
+    }
+
+    .reserva h2 {
+        right: 10%;
+        font-size: 25px;
+    }
+
+    .reserva h3 {
+        right: 0%;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .reserva h3 {
+        right: 10%;
+    }
+
+    #name input {
+        width: 200px;
+    }
+
+    #mail input {
+        width: 200px;
+    }
+
+    #cp input {
+        width: 200px;
+    }
+
+    #phone input {
+        width: 200px;
+    }
+
+    #state input {
+        width: 200px;
+    }
+
+    #city input {
+        width: 200px;
+    }
+
+    #road input {
+        width: 200px;
+    }
+
+    #number input {
+        width: 200px;
+    }
+
+    #neighborhood input {
+        width: 200px;
+    }
+
+    #lista-reservas {
+        font-size: 10px;
+    }
+
+    #datas {
+        font-size: 13px;
+    }
+
+    #total {
+        font-size: 13px;
+    }
+
+    #dados-reserva img {
+        width: 30px;
+    }
+
+    #whats {
+        width: 90%;
+    }
+
+    #site {
+        width: 80%;
+    }
+
+    .reserva h2 {
+        right: 5%;
+    }
+
+    .reserva h3 {
+        right: 0%;
+        font-size: 12px;
+    }
+
+    .ipisel img {
+        width: 50%;
     }
 
 }
