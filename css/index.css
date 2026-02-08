@@ -2,7 +2,6 @@
 .grupo-img {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
     width: 106%;
     position: relative;
     right: 3%;
@@ -10,6 +9,7 @@
 
 .imagens {
     flex: 25%;
+    max-width: 25%;
 }
 
 .imagens img {
