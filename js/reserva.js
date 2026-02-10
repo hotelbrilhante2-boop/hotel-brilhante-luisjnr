@@ -16,15 +16,22 @@ dataSaida.value = formatar(amanha);
 dataEntrada.min = formatar(hoje1);
 dataSaida.min = formatar(amanha);
 
-
 // seta o mínimo da data de entrada (hoje)
 const hoje2 = new Date().toISOString().split("T")[0];
 dataEntrada.min = hoje2;
 dataSaida.min = hoje2;
 
 dataEntrada.addEventListener("change", () => {
+    const entrada = new Date(dataEntrada.value);
+
+    // saída só pode ser a partir do dia seguinte
+    entrada.setDate(entrada.getDate() + 1);
+
+    const minSaida = formatar(entrada);
+
     dataSaida.value = "";
-    dataSaida.min = dataEntrada.value;
+    dataSaida.min = minSaida;
+
     calcularTotal();
 });
 

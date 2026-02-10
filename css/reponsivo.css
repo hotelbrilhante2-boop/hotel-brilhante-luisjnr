@@ -109,6 +109,10 @@
         left: 0%;
     }
 
+    .imagens img {
+        height: 250px;
+    }
+
     .cards {
         max-width: 100%;
         left: 0%;
