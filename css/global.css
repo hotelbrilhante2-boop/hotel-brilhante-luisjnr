@@ -244,3 +244,25 @@ p {
 .ipisel img {
     width: 20%;
 }
+
+/*REGRAS*/
+
+.regras {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.regras h1 {
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+
+.regras p {
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.regras h3 {
+    font-size: 30px;
+}

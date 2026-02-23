@@ -503,6 +503,14 @@
         width: 40%;
     }
 
+    #whats {
+        width: 90%;
+    }
+
+    #site {
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width: 490px) {
@@ -596,6 +604,12 @@
         width: 40%;
     }
 
+    .regras h3 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
 }
 
 @media screen and (max-width: 415px) {
@@ -638,6 +652,7 @@
 
     .quarto h2 {
         font-size: 25px;
+        width: 70%;
     }
 
     .quarto h3 {
@@ -652,77 +667,13 @@
         right: 10%;
         width: 100%;
         margin-left: 0px;
-        font-size: 20px;
-    }
-
-    .reserva h3 {
-        right: 5%;
-        font-size: 15px;
-    }
-
-}
-
-@media screen and (max-width: 415px) {
-
-    #lista-reservas {
-        font-size: 13px;
-    }
-
-    .reserva h3 {
-        right: 10%;
-    }
-
-    #formulario {
-        margin-left: 5%;
-    }
-
-    #confirmar-reserva {
-        margin-left: 15%;
-    }
-
-    .quarto h2 {
-        width: 70%;
-    }
-
-    .quarto img {
-        width: 40px;
-    }
-
-    .template h2 {
-        font-size: 30px;
-    }
-
-    .imagens a {
-        font-size: 15px;
-    }
-
-    .imagens img {
-        height: 180px;
-    }
-
-    .quarto img {
-        width: 30px;
-    }
-
-    .quarto h2 {
-        font-size: 25px;
-    }
-
-    .quarto h3 {
-        font-size: 15px;
-    }
-
-    .reserva img {
-        left: 35%;
-    }
-
-    .reserva h2 {
         right: 10%;
         font-size: 25px;
     }
 
     .reserva h3 {
         right: 0%;
+        font-size: 15px;
     }
 
 }
