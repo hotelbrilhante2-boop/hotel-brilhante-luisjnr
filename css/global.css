@@ -1,6 +1,3 @@
-/*FONTE*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 /*GERAL*/
 * {
   box-sizing: border-box;
@@ -10,10 +7,6 @@
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-variation-settings: "width" 100;
   border-left: #00879a 300px solid;
   border-right: #00879a 300px solid;
 }
