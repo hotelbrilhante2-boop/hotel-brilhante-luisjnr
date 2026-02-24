@@ -18,7 +18,7 @@
   height: 300px;
 }
 
-.imagens h3,
+.imagens h2,
 .imagens a {
   display: inline-block;
   color: #005a67;
@@ -27,7 +27,7 @@
   margin-right: 10%;
 }
 
-.imagens h3 {
+.imagens h2 {
   font-size: 25px;
 }
 
