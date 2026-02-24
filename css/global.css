@@ -23,6 +23,10 @@ p {
   color: #545454;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*NAVEGAÇÃO DO TOPO*/
 .navbar {
   display: flex;
@@ -199,7 +203,8 @@ p {
   text-align: left;
   width: 100%;
   padding-left: 30%;
-  padding-top: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 19px;
   text-decoration: none;
   color: #005a67;
