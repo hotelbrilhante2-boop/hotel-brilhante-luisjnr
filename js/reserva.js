@@ -22,21 +22,21 @@ dataEntrada.min = hoje2;
 dataSaida.min = hoje2;
 
 dataEntrada.addEventListener("change", () => {
-    const entrada = new Date(dataEntrada.value);
+  const entrada = new Date(dataEntrada.value);
 
-    // saída só pode ser a partir do dia seguinte
-    entrada.setDate(entrada.getDate() + 1);
+  // saída só pode ser a partir do dia seguinte
+  entrada.setDate(entrada.getDate() + 1);
 
-    const minSaida = formatar(entrada);
+  const minSaida = formatar(entrada);
 
-    dataSaida.value = "";
-    dataSaida.min = minSaida;
+  dataSaida.value = "";
+  dataSaida.min = minSaida;
 
-    calcularTotal();
+  calcularTotal();
 });
 
 dataSaida.addEventListener("change", () => {
-    calcularTotal();
+  calcularTotal();
 });
 
 // --- RESERVA HOTEL BRILHANTE ---
@@ -48,67 +48,66 @@ const selects = document.querySelectorAll(".qtd-quarto");
 const resultado = document.getElementById("resultado-total");
 
 function calcularTotal() {
-    let total = 0;
-    const reservas = [];
+  let total = 0;
+  const reservas = [];
 
-    // calcula quantidade de dias
-    let dias = 0;
+  // calcula quantidade de dias
+  let dias = 0;
 
-    if (dataEntrada.value && dataSaida.value) {
-        const inicio = new Date(dataEntrada.value);
-        const fim = new Date(dataSaida.value);
+  if (dataEntrada.value && dataSaida.value) {
+    const inicio = new Date(dataEntrada.value);
+    const fim = new Date(dataSaida.value);
 
-        dias = (fim - inicio) / (1000 * 60 * 60 * 24);
-        localStorage.setItem("dataEntrada", dataEntrada.value);
-        localStorage.setItem("dataSaida", dataSaida.value);
-        localStorage.setItem("diarias", dias);
+    dias = (fim - inicio) / (1000 * 60 * 60 * 24);
+    localStorage.setItem("dataEntrada", dataEntrada.value);
+    localStorage.setItem("dataSaida", dataSaida.value);
+    localStorage.setItem("diarias", dias);
 
-        if (dias < 1) dias = 0;
+    if (dias < 1) dias = 0;
+  }
+
+  // pega selects
+  selects.forEach((select) => {
+    const preco = Number(select.dataset.preco);
+    const qtd = Number(select.value);
+
+    if (qtd > 0) {
+      total += preco * qtd;
+      reservas.push({
+        nome: select.dataset.nome,
+        qtd: qtd,
+        preco: preco,
+      });
     }
+  });
 
-    // pega selects
-    selects.forEach(select => {
-        const preco = Number(select.dataset.preco);
-        const qtd = Number(select.value);
+  // soma diária × dias
+  let totalFinal = dias > 0 ? total * dias : total;
 
-        if (qtd > 0) {
-            total += preco * qtd;
-            reservas.push({
-                nome: select.dataset.nome,
-                qtd: qtd,
-                preco: preco
-            });
-        }
-    });
+  // salva
+  localStorage.setItem("totalReserva", totalFinal);
+  localStorage.setItem("reservas", JSON.stringify(reservas));
 
-    // soma diária × dias
-    let totalFinal = dias > 0 ? total * dias : total;
+  // mostra total
+  if (dias > 0) {
+    textoDiarias.textContent = `Diárias totais: ${dias}`;
+    resultado.textContent = `TOTAL: R$ ${totalFinal},00`;
+  }
 
-    // salva
-    localStorage.setItem("totalReserva", totalFinal);
-    localStorage.setItem("reservas", JSON.stringify(reservas));
-
-    // mostra total
-    if (dias > 0) {
-        textoDiarias.textContent = `Diárias totais: ${dias}`;
-        resultado.textContent = `TOTAL: R$ ${totalFinal},00`;
-    }
-
-    // mostra ou esconde botão
-    const box = document.querySelector(".botao-reserva");
-    box.style.display = totalFinal > 0 ? "block" : "none";
+  // mostra ou esconde botão
+  const box = document.querySelector(".botao-reserva");
+  box.style.display = totalFinal > 0 ? "block" : "none";
 }
 
 dataEntrada.addEventListener("change", () => {
-    const nova = new Date(dataEntrada.value);
-    nova.setDate(nova.getDate() + 1);
-    dataSaida.value = formatar(nova);
+  const nova = new Date(dataEntrada.value);
+  nova.setDate(nova.getDate() + 1);
+  dataSaida.value = formatar(nova);
 });
 
-
 // adiciona evento pra recalcular sempre que mudar a quantidade
-selects.forEach(select => {
-    select.addEventListener("input", calcularTotal);
+selects.forEach((select) => {
+  select.addEventListener("input", calcularTotal);
 });
 
 // atualiza na abertura da página

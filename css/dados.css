@@ -1,268 +1,268 @@
 .template {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: #005a67;
-    justify-content: center;
-    align-items: center;
-    width: 106%;
-    position: relative;
-    right: 3%;
-    margin-top: 5%;
-    padding-bottom: 100px;
-    padding-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #005a67;
+  justify-content: center;
+  align-items: center;
+  width: 106%;
+  position: relative;
+  right: 3%;
+  margin-top: 5%;
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 .header-dados {
-    text-align: center;
-    margin-bottom: 5%;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 .header-dados {
-    font-size: 50px;
-    margin-bottom: 2%;
+  font-size: 50px;
+  margin-bottom: 2%;
 }
 
 .header-dados {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .header-dados {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .header-dados h2 {
-    display: inline-block;
-    width: 100%;
-    font-size: 40px;
-    margin: 0px;
+  display: inline-block;
+  width: 100%;
+  font-size: 40px;
+  margin: 0px;
 }
 
 .header-dados ul {
-    display: inline-block;
-    width: 0px;
-    text-align: left;
-    color: gray;
-    padding-left: 0px;
-    font-size: 20px;
+  display: inline-block;
+  width: 0px;
+  text-align: left;
+  color: gray;
+  padding-left: 0px;
+  font-size: 20px;
 }
 
 .header-dados p {
-    font-size: 20px;
-    margin-left: 0%;
-    margin-right: 0%;
+  font-size: 20px;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 #dados-reserva {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    border-bottom: #00879a 5px solid;
-    background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: #00879a 5px solid;
+  background-color: white;
 }
 
 #dados-reserva img {
-    width: 70px;
+  width: 70px;
 }
 
 #lista-reservas {
-    flex: 80%;
-    margin-left: 5%;
+  flex: 80%;
+  margin-left: 5%;
 }
 
 #datas {
-    flex: 50%;
-    margin-left: 5%;
+  flex: 50%;
+  margin-left: 5%;
 }
 
 #total {
-    text-align: right;
-    flex: 30%;
-    margin-right: 5%;
-    position: relative;
-    top: 50px;
+  text-align: right;
+  flex: 30%;
+  margin-right: 5%;
+  position: relative;
+  top: 50px;
 }
 
 .dados {
-    text-align: left;
-    background-color: white;
-    border: 7px #00879a solid;
-    width: 90%;
-    border-radius: 15px;
-    margin-top: 20px;
+  text-align: left;
+  background-color: white;
+  border: 7px #00879a solid;
+  width: 90%;
+  border-radius: 15px;
+  margin-top: 20px;
 }
 
 #formulario {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0px 50px 50px 50px;
-    gap: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px 50px 50px 50px;
+  gap: 30px;
 }
 
 #formulario h3 {
-    flex: 100%;
-    font-size: 35px;
+  flex: 100%;
+  font-size: 35px;
 }
 
 #name {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #name input {
-    width: 500px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
+  width: 500px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 #mail {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #mail input {
-    width: 500px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
+  width: 500px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 #birth {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #birth input {
-    width: 160px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
-    cursor: text;
+  width: 160px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: text;
 }
 
 #sex {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #sex select {
-    width: 140px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: white;
+  width: 140px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
 }
 
 #country {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #country select {
-    width: 140px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: white;
+  width: 140px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
 }
 
 #phone {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #phone input {
-    width: 400px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
+  width: 400px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 #cp {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #cp input {
-    width: 300px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
+  width: 300px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 #state {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #state input {
-    width: 300px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
+  width: 300px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 #city {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #city input {
-    width: 300px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
+  width: 300px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 #road {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #road input {
-    width: 300px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
+  width: 300px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 #number {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #number input {
-    width: 300px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
+  width: 300px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 #neighborhood {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 #neighborhood input {
-    width: 300px;
-    font-size: 19px;
-    height: 50px;
-    border-radius: 10px;
+  width: 300px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 #confirmar-reserva {
-    border: #00879a 5px solid;
-    border-radius: 10px;
-    width: 200px;
-    height: auto;
-    cursor: pointer;
-    background-color: white;
+  border: #00879a 5px solid;
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  background-color: white;
 }
 
 #confirmar-reserva p {
-    color: black;
+  color: black;
 }
 
 #confirmar-reserva:hover {
-    background-color: #00879a;
-    opacity: 0.8;
+  background-color: #00879a;
+  opacity: 0.8;
 }
 
 #designe-botao-confirmar {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 0px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }

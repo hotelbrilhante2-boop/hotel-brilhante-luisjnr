@@ -1,49 +1,49 @@
 .contato-local {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: #005a67;
-    width: 106%;
-    position: relative;
-    right: 3%;
-    padding-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #005a67;
+  width: 106%;
+  position: relative;
+  right: 3%;
+  padding-bottom: 20px;
 }
 
 .coluna-esq {
-    background-color: white;
-    flex: 40%;
-    margin: 4%;
-    border-radius: 10px;
-    height: 350px;
+  background-color: white;
+  flex: 40%;
+  margin: 4%;
+  border-radius: 10px;
+  height: 350px;
 }
 
 .coluna-esq h2,
 .coluna-esq p {
-    margin-right: 20%;
-    margin-left: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 .coluna-dir {
-    background-color: white;
-    flex: 40%;
-    margin: 4%;
+  background-color: white;
+  flex: 40%;
+  margin: 4%;
 }
 
 .coluna-dir h2 {
-    background-color: #005a67;
-    margin-top: 0px;
-    text-align: left;
-    padding-bottom: 50px;
+  background-color: #005a67;
+  margin-top: 0px;
+  text-align: left;
+  padding-bottom: 50px;
 }
 
 .coluna-dir iframe {
-    width: 98%;
-    text-align: center;
+  width: 98%;
+  text-align: center;
 }
 
 #whats {
-    width: 80%;
+  width: 80%;
 }
 
 #site {
-    width: 70%;
+  width: 70%;
 }
