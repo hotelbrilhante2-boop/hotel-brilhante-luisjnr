@@ -34,14 +34,13 @@
   display: inline-block;
   width: 100%;
   font-size: 40px;
-  margin: 0px;
 }
 
 .header-dados ul {
   display: inline-block;
   width: 0px;
   text-align: left;
-  color: gray;
+  color: 545454;
   padding-left: 0px;
   font-size: 20px;
 }
@@ -68,6 +67,7 @@
 #lista-reservas {
   flex: 80%;
   margin-left: 5%;
+  color: 545454;
 }
 
 #datas {
