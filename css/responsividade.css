@@ -448,6 +448,11 @@
   #click {
     left: 60px;
   }
+
+  .header ul {
+    max-width: 100%;
+    padding: 50px;
+  }
 }
 
 @media screen and (max-width: 554px) {
@@ -586,6 +591,7 @@
   .regras h2 {
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 20px;
   }
 
   .imagens h2 {

@@ -174,7 +174,8 @@ img {
 
 .header h1 {
   font-size: 50px;
-  margin-bottom: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .header p {
