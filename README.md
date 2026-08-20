@@ -26,10 +26,6 @@ This project was developed to provide a modern, responsive, and user-friendly on
 
 **[Visit Hotel Brilhante](https://hotelbrilhante.com.br/)**
 
-## 📸 Preview
-
-![Hotel Brilhante](https://hotelbrilhante.com.br/imagens/preview.png)
-
 ## 📌 Project Status
 
 🟢 **Active**
